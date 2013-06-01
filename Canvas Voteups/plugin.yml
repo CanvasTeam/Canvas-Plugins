@@ -1,0 +1,12 @@
+name: Canvas Voteups
+version: 0.1
+main: com.zombiehippie.bukkit.voteups.VoteUps
+depends: [Canvas Claims]
+
+commands:
+  voteup:
+     aliases: [vu]
+  votedown:
+     aliases: [vd]
+  checkvotes:
+     aliases: [chk]
