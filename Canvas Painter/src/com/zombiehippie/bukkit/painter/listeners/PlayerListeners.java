@@ -17,9 +17,6 @@ public class PlayerListeners implements Listener{
 		Block theBlock = event.getPlayer().getLocation().getBlock();
 		boolean leftClicked = true;
 		
-		if(event.getItem().getType() != Material.BOOKSHELF){
-			return;
-		}
 		
 		// Figure out target block
 		switch(event.getAction()){
@@ -41,15 +38,19 @@ public class PlayerListeners implements Listener{
 			return;
 		}
 		
+		if(!event.getItem().getType().isBlock() && !leftClicked){
+			// If item in hand is not a block and right click, then we cannot snipe-place the block
+			return;
+		}
+		
 		// We have the target block!
 		CustomBlockEvent evt = new CustomBlockEvent(event.getPlayer().getName(), theBlock);
 		
 		Bukkit.getPluginManager().callEvent(evt);
 		
 		if(!evt.isCancelled()){
-			theBlock.setType(leftClicked?Material.AIR:Material.BOOKSHELF);
-			event.getPlayer().sendMessage(evt.getEventName());
-			event.getPlayer().sendMessage(evt.isAsynchronous()?"T":"F");
+			// Snipe-Place block in-hand or Snipe-Break
+			theBlock.setType(leftClicked?Material.AIR:event.getItem().getType());
 		} else {
 			event.getPlayer().sendMessage(ChatColor.RED + "You can only \"snipe\" on your own claim!");
 		}
