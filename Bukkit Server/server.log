@@ -1,0 +1,1530 @@
+2013-05-31 12:43:42 [INFO] Starting minecraft server version 1.5.2
+2013-05-31 12:43:42 [INFO] Loading properties
+2013-05-31 12:43:42 [INFO] Default game type: CREATIVE
+2013-05-31 12:43:42 [INFO] Generating keypair
+2013-05-31 12:43:42 [INFO] Starting Minecraft server on *:25565
+2013-05-31 12:43:42 [INFO] This server is running CraftBukkit version git-Bukkit-1.5.2-R0.1-b2771jnks (MC: 1.5.2) (Implementing API version 1.5.2-R0.1)
+2013-05-31 12:43:42 [WARNING] Could not get information about this CraftBukkit version; perhaps you are running a custom one?: UnknownHostException
+2013-05-31 12:43:42 [WARNING] Could not get latest artifact information: UnknownHostException
+2013-05-31 12:43:42 [INFO] [CanvasClaims] Loading CanvasClaims v0.1
+2013-05-31 12:43:42 [WARNING] Failed to load operators list: java.io.FileNotFoundException: .\ops.txt (The system cannot find the file specified)
+2013-05-31 12:43:42 [WARNING] Failed to load white-list: java.io.FileNotFoundException: .\white-list.txt (The system cannot find the file specified)
+2013-05-31 12:43:42 [INFO] Preparing level "MainWorld"
+2013-05-31 12:43:42 [WARNING] Unable to find spawn biome
+2013-05-31 12:43:44 [INFO] Preparing start region for level 0 (Seed: 7965850554043032289)
+2013-05-31 12:43:45 [INFO] Preparing spawn area: 49%
+2013-05-31 12:43:46 [INFO] Preparing start region for level 1 (Seed: 7965850554043032289)
+2013-05-31 12:43:46 [INFO] Preparing spawn area: 4%
+2013-05-31 12:43:47 [INFO] Preparing spawn area: 83%
+2013-05-31 12:43:47 [INFO] [CanvasClaims] Enabling CanvasClaims v0.1
+2013-05-31 12:43:47 [INFO] [Canvas Claims] 3 claims loaded from file.
+2013-05-31 12:43:47 [INFO] Done (5.212s)! For help, type "help" or "?"
+2013-05-31 12:43:57 [INFO] CONSOLE: Stopping the server..[m
+2013-05-31 12:43:57 [INFO] Stopping server
+2013-05-31 12:43:57 [INFO] [CanvasClaims] Disabling CanvasClaims v0.1
+2013-05-31 12:43:57 [INFO] Saving players
+2013-05-31 12:43:57 [WARNING] DSCT: socket closed
+2013-05-31 12:43:57 [INFO] Saving worlds
+2013-05-31 12:43:57 [INFO] Closing listening thread
+2013-05-31 12:43:57 [INFO] Saving chunks for level 'MainWorld'/Overworld
+2013-05-31 12:43:58 [INFO] Saving chunks for level 'MainWorld_the_end'/The End
+2013-05-31 12:44:53 [INFO] Starting minecraft server version 1.5.2
+2013-05-31 12:44:53 [INFO] Loading properties
+2013-05-31 12:44:53 [INFO] Default game type: CREATIVE
+2013-05-31 12:44:53 [INFO] Generating keypair
+2013-05-31 12:44:53 [INFO] Starting Minecraft server on *:25565
+2013-05-31 12:44:53 [INFO] This server is running CraftBukkit version git-Bukkit-1.5.2-R0.1-b2771jnks (MC: 1.5.2) (Implementing API version 1.5.2-R0.1)
+2013-05-31 12:44:53 [WARNING] Could not get information about this CraftBukkit version; perhaps you are running a custom one?: UnknownHostException
+2013-05-31 12:44:53 [WARNING] Could not get latest artifact information: UnknownHostException
+2013-05-31 12:44:53 [INFO] [CanvasClaims] Loading CanvasClaims v0.1
+2013-05-31 12:44:53 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2013-05-31 12:44:53 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2013-05-31 12:44:53 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2013-05-31 12:44:53 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2013-05-31 12:44:53 [INFO] Preparing level "MainWorld"
+2013-05-31 12:44:54 [INFO] Preparing start region for level 0 (Seed: 7965850554043032289)
+2013-05-31 12:44:54 [INFO] Preparing start region for level 1 (Seed: 7965850554043032289)
+2013-05-31 12:44:54 [INFO] [CanvasClaims] Enabling CanvasClaims v0.1
+2013-05-31 12:44:54 [INFO] [Canvas Claims] 3 claims loaded from file.
+2013-05-31 12:44:54 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2013-05-31 12:44:54 [INFO] Done (0.802s)! For help, type "help" or "?"
+2013-05-31 12:45:05 [INFO] AZombieHippie [/127.0.0.1:51875] lost connection
+2013-05-31 12:45:13 [INFO] AZombieHippie[/127.0.0.1:51876] logged in with entity id 18 at ([MainWorld] -1375.5, 13.0, -951.5)
+2013-05-31 12:46:30 [INFO] [CanvasClaims] Disabling CanvasClaims v0.1
+2013-05-31 12:46:30 [INFO] 229 recipes
+2013-05-31 12:46:30 [INFO] [CanvasClaims] Loading CanvasClaims v0.1
+2013-05-31 12:46:30 [INFO] [CanvasClaims] Enabling CanvasClaims v0.1
+2013-05-31 12:46:30 [INFO] [Canvas Claims] 6 claims loaded from file.
+2013-05-31 12:46:30 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2013-05-31 12:46:30 [INFO] CONSOLE: [0;32;1mReload complete.[m
+2013-05-31 12:47:13 [INFO] Connection reset
+2013-05-31 12:47:13 [INFO] AZombieHippie lost connection: disconnect.endOfStream
+2013-05-31 12:47:37 [INFO] /127.0.0.1:51887 lost connection
+2013-05-31 12:47:39 [INFO] Sam[/127.0.0.1:51888] logged in with entity id 100 at ([MainWorld] -1374.5, 13.0, -944.5)
+2013-05-31 12:49:43 [INFO] Sam lost connection: disconnect.quitting
+2013-05-31 12:49:43 [INFO] Connection reset
+2013-05-31 12:49:53 [INFO] Sam[/127.0.0.1:51897] logged in with entity id 151 at ([MainWorld] -1372.3273875578964, 19.11413529067873, -928.5342233459263)
+2013-05-31 12:51:28 [INFO] Connection reset
+2013-05-31 12:51:28 [INFO] Sam lost connection: disconnect.quitting
+2013-05-31 12:51:37 [INFO] CONSOLE: Stopping the server..[m
+2013-05-31 12:51:37 [INFO] Stopping server
+2013-05-31 12:51:37 [INFO] [CanvasClaims] Disabling CanvasClaims v0.1
+2013-05-31 12:51:37 [SEVERE] Error occurred while disabling CanvasClaims v0.1 (Is it up to date?)
+java.lang.NullPointerException
+	at com.zombiehippie.bukkit.claims.visuals.Visual.sendChange(Visual.java:51)
+	at com.zombiehippie.bukkit.claims.visuals.Visual.visual(Visual.java:36)
+	at com.zombiehippie.bukkit.claims.visuals.Visual.reset(Visual.java:27)
+	at com.zombiehippie.bukkit.claims.visuals.ClaimVisual.resetPlayersVisuals(ClaimVisual.java:105)
+	at com.zombiehippie.bukkit.claims.visuals.ClaimVisual.resetAllVisuals(ClaimVisual.java:120)
+	at com.zombiehippie.bukkit.claims.CanvasClaims.onDisable(CanvasClaims.java:35)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:219)
+	at org.bukkit.plugin.java.JavaPluginLoader.disablePlugin(JavaPluginLoader.java:481)
+	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:400)
+	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:393)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.disablePlugins(CraftServer.java:277)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.stop(MinecraftServer.java:334)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:441)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+2013-05-31 12:51:37 [INFO] Saving players
+2013-05-31 12:51:37 [WARNING] DSCT: socket closed
+2013-05-31 12:51:37 [INFO] Saving worlds
+2013-05-31 12:51:37 [INFO] Closing listening thread
+2013-05-31 12:51:37 [INFO] Saving chunks for level 'MainWorld'/Overworld
+2013-05-31 12:51:37 [INFO] Saving chunks for level 'MainWorld_the_end'/The End
+2013-05-31 13:10:47 [INFO] Starting minecraft server version 1.5.2
+2013-05-31 13:10:47 [INFO] Loading properties
+2013-05-31 13:10:47 [INFO] Default game type: CREATIVE
+2013-05-31 13:10:47 [INFO] Generating keypair
+2013-05-31 13:10:48 [INFO] Starting Minecraft server on *:25565
+2013-05-31 13:10:48 [INFO] This server is running CraftBukkit version git-Bukkit-1.5.2-R0.1-b2771jnks (MC: 1.5.2) (Implementing API version 1.5.2-R0.1)
+2013-05-31 13:10:48 [WARNING] Could not get information about this CraftBukkit version; perhaps you are running a custom one?: UnknownHostException
+2013-05-31 13:10:48 [WARNING] Could not get latest artifact information: UnknownHostException
+2013-05-31 13:10:48 [SEVERE] Could not load 'plugins\CanvasVoteUps.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.ClassNotFoundException: com.zombiehippie.bukkit.voteups.VoteUps
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:184)
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:305)
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:230)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.loadPlugins(CraftServer.java:239)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.<init>(CraftServer.java:217)
+	at net.minecraft.server.v1_5_R3.PlayerList.<init>(PlayerList.java:55)
+	at net.minecraft.server.v1_5_R3.DedicatedPlayerList.<init>(SourceFile:11)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.init(DedicatedServer.java:106)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:382)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.ClassNotFoundException: com.zombiehippie.bukkit.voteups.VoteUps
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at org.bukkit.plugin.java.PluginClassLoader.findClass0(PluginClassLoader.java:80)
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:53)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:173)
+	... 9 more
+2013-05-31 13:10:48 [INFO] [CanvasClaims] Loading CanvasClaims v0.1
+2013-05-31 13:10:48 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2013-05-31 13:10:48 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2013-05-31 13:10:48 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2013-05-31 13:10:48 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2013-05-31 13:10:48 [INFO] Preparing level "MainWorld"
+2013-05-31 13:10:48 [INFO] Preparing start region for level 0 (Seed: 7965850554043032289)
+2013-05-31 13:10:49 [INFO] Preparing start region for level 1 (Seed: 7965850554043032289)
+2013-05-31 13:10:49 [INFO] [CanvasClaims] Enabling CanvasClaims v0.1
+2013-05-31 13:10:49 [INFO] [Canvas Claims] 7 claims loaded from file.
+2013-05-31 13:10:49 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2013-05-31 13:10:49 [INFO] Done (0.840s)! For help, type "help" or "?"
+2013-05-31 13:12:43 [INFO] Sam [/127.0.0.1:51983] lost connection
+2013-05-31 13:12:48 [INFO] Sam[/127.0.0.1:51984] logged in with entity id 41 at ([MainWorld] -1376.3053544384163, 17.240264518283354, -931.9063836873875)
+2013-05-31 13:12:53 [INFO] [CanvasClaims] Disabling CanvasClaims v0.1
+2013-05-31 13:12:53 [INFO] 229 recipes
+2013-05-31 13:12:53 [INFO] [CanvasClaims] Loading CanvasClaims v0.1
+2013-05-31 13:12:53 [INFO] [Canvas Voteups] Loading Canvas Voteups v0.1
+2013-05-31 13:12:53 [INFO] [CanvasClaims] Enabling CanvasClaims v0.1
+2013-05-31 13:12:53 [INFO] [Canvas Claims] 7 claims loaded from file.
+2013-05-31 13:12:53 [INFO] [Canvas Voteups] Enabling Canvas Voteups v0.1
+2013-05-31 13:12:53 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2013-05-31 13:12:53 [INFO] CONSOLE: [0;32;1mReload complete.[m
+2013-05-31 13:13:05 [INFO] [Canvas Voteups] Disabling Canvas Voteups v0.1
+2013-05-31 13:13:05 [INFO] [CanvasClaims] Disabling CanvasClaims v0.1
+2013-05-31 13:13:05 [INFO] 229 recipes
+2013-05-31 13:13:05 [INFO] [CanvasClaims] Loading CanvasClaims v0.1
+2013-05-31 13:13:05 [INFO] [Canvas Voteups] Loading Canvas Voteups v0.1
+2013-05-31 13:13:05 [INFO] [CanvasClaims] Enabling CanvasClaims v0.1
+2013-05-31 13:13:05 [INFO] [Canvas Claims] 7 claims loaded from file.
+2013-05-31 13:13:05 [INFO] [Canvas Voteups] Enabling Canvas Voteups v0.1
+2013-05-31 13:13:05 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2013-05-31 13:13:05 [INFO] CONSOLE: [0;32;1mReload complete.[m
+2013-05-31 13:13:14 [INFO] CONSOLE: Stopping the server..[m
+2013-05-31 13:13:14 [INFO] Stopping server
+2013-05-31 13:13:14 [INFO] [Canvas Voteups] Disabling Canvas Voteups v0.1
+2013-05-31 13:13:14 [INFO] [CanvasClaims] Disabling CanvasClaims v0.1
+2013-05-31 13:13:14 [INFO] Saving players
+2013-05-31 13:13:14 [WARNING] DSCT: socket closed
+2013-05-31 13:13:14 [INFO] Closing listening thread
+2013-05-31 13:13:14 [INFO] Saving worlds
+2013-05-31 13:13:14 [INFO] Saving chunks for level 'MainWorld'/Overworld
+2013-05-31 13:13:14 [INFO] Saving chunks for level 'MainWorld_the_end'/The End
+2013-05-31 13:13:19 [INFO] Starting minecraft server version 1.5.2
+2013-05-31 13:13:19 [INFO] Loading properties
+2013-05-31 13:13:19 [INFO] Default game type: CREATIVE
+2013-05-31 13:13:19 [INFO] Generating keypair
+2013-05-31 13:13:19 [INFO] Starting Minecraft server on *:25565
+2013-05-31 13:13:19 [INFO] This server is running CraftBukkit version git-Bukkit-1.5.2-R0.1-b2771jnks (MC: 1.5.2) (Implementing API version 1.5.2-R0.1)
+2013-05-31 13:13:19 [WARNING] Could not get information about this CraftBukkit version; perhaps you are running a custom one?: UnknownHostException
+2013-05-31 13:13:19 [WARNING] Could not get latest artifact information: UnknownHostException
+2013-05-31 13:13:19 [INFO] [CanvasClaims] Loading CanvasClaims v0.1
+2013-05-31 13:13:19 [INFO] [Canvas Voteups] Loading Canvas Voteups v0.1
+2013-05-31 13:13:19 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2013-05-31 13:13:19 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2013-05-31 13:13:19 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2013-05-31 13:13:19 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2013-05-31 13:13:19 [INFO] Preparing level "MainWorld"
+2013-05-31 13:13:19 [INFO] Preparing start region for level 0 (Seed: 7965850554043032289)
+2013-05-31 13:13:20 [INFO] Preparing start region for level 1 (Seed: 7965850554043032289)
+2013-05-31 13:13:20 [INFO] [CanvasClaims] Enabling CanvasClaims v0.1
+2013-05-31 13:13:20 [INFO] [Canvas Claims] 7 claims loaded from file.
+2013-05-31 13:13:20 [INFO] [Canvas Voteups] Enabling Canvas Voteups v0.1
+2013-05-31 13:13:20 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2013-05-31 13:13:20 [INFO] Done (0.785s)! For help, type "help" or "?"
+2013-05-31 13:13:29 [INFO] Sam[/127.0.0.1:51990] logged in with entity id 41 at ([MainWorld] -1376.3053544384163, 17.240264518283354, -931.9063836873875)
+2013-05-31 13:16:28 [INFO] [Canvas Voteups] Disabling Canvas Voteups v0.1
+2013-05-31 13:16:28 [INFO] [CanvasClaims] Disabling CanvasClaims v0.1
+2013-05-31 13:16:28 [INFO] 229 recipes
+2013-05-31 13:16:28 [INFO] [CanvasClaims] Loading CanvasClaims v0.1
+2013-05-31 13:16:28 [INFO] [Canvas Voteups] Loading Canvas Voteups v0.1
+2013-05-31 13:16:28 [INFO] [CanvasClaims] Enabling CanvasClaims v0.1
+2013-05-31 13:16:28 [INFO] [Canvas Claims] 7 claims loaded from file.
+2013-05-31 13:16:28 [INFO] [Canvas Voteups] Enabling Canvas Voteups v0.1
+2013-05-31 13:16:28 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2013-05-31 13:16:28 [INFO] CONSOLE: [0;32;1mReload complete.[m
+2013-05-31 13:16:48 [INFO] Sam issued server command: /help CanvasVoteUps
+2013-05-31 13:16:59 [INFO] Sam issued server command: /help Canvas Voteups
+2013-05-31 13:17:06 [INFO] Sam issued server command: /voteup
+2013-05-31 13:19:54 [INFO] Plugins (2): [0;32;1mCanvasClaims[0;37;1m, [0;32;1mCanvas Voteups[m
+2013-05-31 13:23:08 [INFO] [Canvas Voteups] Disabling Canvas Voteups v0.1
+2013-05-31 13:23:08 [INFO] [CanvasClaims] Disabling CanvasClaims v0.1
+2013-05-31 13:23:08 [INFO] 229 recipes
+2013-05-31 13:23:08 [INFO] [CanvasClaims] Loading CanvasClaims v0.1
+2013-05-31 13:23:08 [INFO] [Canvas Voteups] Loading Canvas Voteups v0.1
+2013-05-31 13:23:08 [INFO] [CanvasClaims] Enabling CanvasClaims v0.1
+2013-05-31 13:23:08 [INFO] [Canvas Claims] 7 claims loaded from file.
+2013-05-31 13:23:08 [INFO] [Canvas Voteups] Enabling Canvas Voteups v0.1
+2013-05-31 13:23:08 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2013-05-31 13:23:08 [INFO] CONSOLE: [0;32;1mReload complete.[m
+2013-05-31 13:23:15 [INFO] You're not a Player![m
+2013-05-31 13:44:12 [INFO] [Canvas Voteups] Disabling Canvas Voteups v0.1
+2013-05-31 13:44:12 [INFO] [CanvasClaims] Disabling CanvasClaims v0.1
+2013-05-31 13:44:12 [SEVERE] Error occurred while disabling CanvasClaims v0.1 (Is it up to date?)
+java.lang.NoClassDefFoundError: com/zombiehippie/bukkit/claims/visuals/ClaimVisual
+	at com.zombiehippie.bukkit.claims.CanvasClaims.onDisable(CanvasClaims.java:35)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:219)
+	at org.bukkit.plugin.java.JavaPluginLoader.disablePlugin(JavaPluginLoader.java:481)
+	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:400)
+	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:393)
+	at org.bukkit.plugin.SimplePluginManager.clearPlugins(SimplePluginManager.java:434)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.reload(CraftServer.java:575)
+	at org.bukkit.Bukkit.reload(Bukkit.java:185)
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:23)
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:189)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.dispatchCommand(CraftServer.java:523)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.dispatchServerCommand(CraftServer.java:512)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.an(DedicatedServer.java:262)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:227)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.ClassNotFoundException: com.zombiehippie.bukkit.claims.visuals.ClaimVisual
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at org.bukkit.plugin.java.PluginClassLoader.findClass0(PluginClassLoader.java:80)
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:53)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 17 more
+2013-05-31 13:44:12 [INFO] 229 recipes
+2013-05-31 13:44:12 [INFO] [CanvasClaims] Loading CanvasClaims v0.1
+2013-05-31 13:44:12 [INFO] [Canvas Voteups] Loading Canvas Voteups v0.1
+2013-05-31 13:44:12 [INFO] [CanvasClaims] Enabling CanvasClaims v0.1
+2013-05-31 13:44:12 [INFO] [Canvas Claims] 7 claims loaded from file.
+2013-05-31 13:44:12 [INFO] [Canvas Voteups] Enabling Canvas Voteups v0.1
+2013-05-31 13:44:12 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2013-05-31 13:44:12 [INFO] CONSOLE: [0;32;1mReload complete.[m
+2013-05-31 13:44:38 [INFO] Sam issued server command: /voteup
+2013-05-31 13:44:43 [INFO] Sam issued server command: /voteup
+2013-05-31 13:44:44 [INFO] Sam issued server command: /voteup
+2013-05-31 13:44:45 [INFO] Sam issued server command: /voteup
+2013-05-31 13:44:54 [INFO] Sam issued server command: /checkvotes
+2013-05-31 13:45:08 [INFO] Sam issued server command: /checkvotes
+2013-05-31 13:45:22 [INFO] Connection reset
+2013-05-31 13:45:22 [INFO] Sam lost connection: disconnect.quitting
+2013-05-31 14:04:10 [INFO] [Canvas Voteups] Disabling Canvas Voteups v0.1
+2013-05-31 14:04:10 [INFO] [CanvasClaims] Disabling CanvasClaims v0.1
+2013-05-31 14:04:10 [SEVERE] Error occurred while disabling CanvasClaims v0.1 (Is it up to date?)
+java.lang.NullPointerException
+	at com.zombiehippie.bukkit.claims.visuals.Visual.sendChange(Visual.java:51)
+	at com.zombiehippie.bukkit.claims.visuals.Visual.visual(Visual.java:36)
+	at com.zombiehippie.bukkit.claims.visuals.Visual.reset(Visual.java:27)
+	at com.zombiehippie.bukkit.claims.visuals.ClaimVisual.resetPlayersVisuals(ClaimVisual.java:105)
+	at com.zombiehippie.bukkit.claims.visuals.ClaimVisual.resetAllVisuals(ClaimVisual.java:120)
+	at com.zombiehippie.bukkit.claims.CanvasClaims.onDisable(CanvasClaims.java:35)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:219)
+	at org.bukkit.plugin.java.JavaPluginLoader.disablePlugin(JavaPluginLoader.java:481)
+	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:400)
+	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:393)
+	at org.bukkit.plugin.SimplePluginManager.clearPlugins(SimplePluginManager.java:434)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.reload(CraftServer.java:575)
+	at org.bukkit.Bukkit.reload(Bukkit.java:185)
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:23)
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:189)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.dispatchCommand(CraftServer.java:523)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.dispatchServerCommand(CraftServer.java:512)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.an(DedicatedServer.java:262)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:227)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+2013-05-31 14:04:10 [INFO] 229 recipes
+2013-05-31 14:04:10 [INFO] [Canvas Painter] Loading Canvas Painter v0.1
+2013-05-31 14:04:10 [INFO] [CanvasClaims] Loading CanvasClaims v0.1
+2013-05-31 14:04:10 [INFO] [Canvas Voteups] Loading Canvas Voteups v0.1
+2013-05-31 14:04:10 [INFO] [Canvas Painter] Enabling Canvas Painter v0.1
+2013-05-31 14:04:10 [INFO] [CanvasClaims] Enabling CanvasClaims v0.1
+2013-05-31 14:04:10 [INFO] [Canvas Claims] 7 claims loaded from file.
+2013-05-31 14:04:10 [INFO] [Canvas Voteups] Enabling Canvas Voteups v0.1
+2013-05-31 14:04:10 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2013-05-31 14:04:10 [INFO] CONSOLE: [0;32;1mReload complete.[m
+2013-05-31 14:04:33 [INFO] AZombieHippie[/127.0.0.1:52170] logged in with entity id 1150 at ([MainWorld] -1364.933404994169, 18.88743101968086, -937.9284096585588)
+2013-05-31 14:05:08 [SEVERE] Could not pass event PlayerInteractEvent to Canvas Painter v0.1
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:186)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:156)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:1004)
+	at net.minecraft.server.v1_5_R3.Packet18ArmAnimation.handle(SourceFile:41)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:109)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.NullPointerException
+	at com.zombiehippie.bukkit.painter.listeners.PlayerListeners.onPlayerInteraction(PlayerListeners.java:17)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 16 more
+2013-05-31 14:05:09 [SEVERE] Could not pass event PlayerInteractEvent to Canvas Painter v0.1
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:186)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:156)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:1004)
+	at net.minecraft.server.v1_5_R3.Packet18ArmAnimation.handle(SourceFile:41)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:109)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.NullPointerException
+	at com.zombiehippie.bukkit.painter.listeners.PlayerListeners.onPlayerInteraction(PlayerListeners.java:17)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 16 more
+2013-05-31 14:05:09 [SEVERE] Could not pass event PlayerInteractEvent to Canvas Painter v0.1
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:186)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:156)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:1004)
+	at net.minecraft.server.v1_5_R3.Packet18ArmAnimation.handle(SourceFile:41)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:109)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.NullPointerException
+	at com.zombiehippie.bukkit.painter.listeners.PlayerListeners.onPlayerInteraction(PlayerListeners.java:17)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 16 more
+2013-05-31 14:05:09 [SEVERE] Could not pass event PlayerInteractEvent to Canvas Painter v0.1
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:186)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:156)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:1004)
+	at net.minecraft.server.v1_5_R3.Packet18ArmAnimation.handle(SourceFile:41)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:109)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.NullPointerException
+	at com.zombiehippie.bukkit.painter.listeners.PlayerListeners.onPlayerInteraction(PlayerListeners.java:17)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 16 more
+2013-05-31 14:17:23 [INFO] [Canvas Voteups] Disabling Canvas Voteups v0.1
+2013-05-31 14:17:23 [INFO] [CanvasClaims] Disabling CanvasClaims v0.1
+2013-05-31 14:17:23 [INFO] [Canvas Painter] Disabling Canvas Painter v0.1
+2013-05-31 14:17:23 [INFO] 229 recipes
+2013-05-31 14:17:23 [INFO] [CanvasClaims] Loading CanvasClaims v0.1
+2013-05-31 14:17:23 [INFO] [Canvas Voteups] Loading Canvas Voteups v0.1
+2013-05-31 14:17:23 [INFO] [Canvas Painter] Loading Canvas Painter v0.1
+2013-05-31 14:17:23 [INFO] [CanvasClaims] Enabling CanvasClaims v0.1
+2013-05-31 14:17:23 [SEVERE] Error occurred while enabling CanvasClaims v0.1 (Is it up to date?)
+org.bukkit.plugin.IllegalPluginAccessException: Unable to find handler list for event org.bukkit.event.block.BlockEvent
+	at org.bukkit.plugin.SimplePluginManager.getRegistrationClass(SimplePluginManager.java:559)
+	at org.bukkit.plugin.SimplePluginManager.getRegistrationClass(SimplePluginManager.java:557)
+	at org.bukkit.plugin.SimplePluginManager.registerEvents(SimplePluginManager.java:503)
+	at com.zombiehippie.bukkit.claims.CanvasClaims.onEnable(CanvasClaims.java:42)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:217)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:457)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:381)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.loadPlugin(CraftServer.java:282)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.enablePlugins(CraftServer.java:264)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.reload(CraftServer.java:605)
+	at org.bukkit.Bukkit.reload(Bukkit.java:185)
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:23)
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:189)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.dispatchCommand(CraftServer.java:523)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.dispatchServerCommand(CraftServer.java:512)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.an(DedicatedServer.java:262)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:227)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+2013-05-31 14:17:23 [INFO] [Canvas Voteups] Enabling Canvas Voteups v0.1
+2013-05-31 14:17:23 [INFO] [Canvas Painter] Enabling Canvas Painter v0.1
+2013-05-31 14:17:23 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2013-05-31 14:17:23 [INFO] CONSOLE: [0;32;1mReload complete.[m
+2013-05-31 14:19:34 [INFO] [Canvas Painter] Disabling Canvas Painter v0.1
+2013-05-31 14:19:34 [INFO] [Canvas Voteups] Disabling Canvas Voteups v0.1
+2013-05-31 14:19:34 [INFO] [CanvasClaims] Disabling CanvasClaims v0.1
+2013-05-31 14:19:34 [INFO] 229 recipes
+2013-05-31 14:19:34 [INFO] [CanvasClaims] Loading CanvasClaims v0.1
+2013-05-31 14:19:34 [INFO] [Canvas Voteups] Loading Canvas Voteups v0.1
+2013-05-31 14:19:34 [INFO] [Canvas Painter] Loading Canvas Painter v0.1
+2013-05-31 14:19:34 [INFO] [CanvasClaims] Enabling CanvasClaims v0.1
+2013-05-31 14:19:34 [SEVERE] Error occurred while enabling CanvasClaims v0.1 (Is it up to date?)
+org.bukkit.plugin.IllegalPluginAccessException: Unable to find handler list for event org.bukkit.event.block.BlockEvent
+	at org.bukkit.plugin.SimplePluginManager.getRegistrationClass(SimplePluginManager.java:559)
+	at org.bukkit.plugin.SimplePluginManager.getRegistrationClass(SimplePluginManager.java:557)
+	at org.bukkit.plugin.SimplePluginManager.registerEvents(SimplePluginManager.java:503)
+	at com.zombiehippie.bukkit.claims.CanvasClaims.onEnable(CanvasClaims.java:42)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:217)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:457)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:381)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.loadPlugin(CraftServer.java:282)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.enablePlugins(CraftServer.java:264)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.reload(CraftServer.java:605)
+	at org.bukkit.Bukkit.reload(Bukkit.java:185)
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:23)
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:189)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.dispatchCommand(CraftServer.java:523)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.dispatchServerCommand(CraftServer.java:512)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.an(DedicatedServer.java:262)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:227)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+2013-05-31 14:19:34 [INFO] [Canvas Voteups] Enabling Canvas Voteups v0.1
+2013-05-31 14:19:34 [INFO] [Canvas Painter] Enabling Canvas Painter v0.1
+2013-05-31 14:19:34 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2013-05-31 14:19:34 [INFO] CONSOLE: [0;32;1mReload complete.[m
+2013-05-31 14:19:49 [SEVERE] Could not pass event PlayerInteractEvent to Canvas Painter v0.1
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:186)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:156)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:611)
+	at net.minecraft.server.v1_5_R3.Packet15Place.handle(SourceFile:58)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:109)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.NullPointerException
+	at com.zombiehippie.bukkit.claims.CustomBlockEvent.<init>(CustomBlockEvent.java:15)
+	at com.zombiehippie.bukkit.painter.listeners.PlayerListeners.onPlayerInteraction(PlayerListeners.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 16 more
+2013-05-31 14:19:49 [SEVERE] Could not pass event PlayerInteractEvent to Canvas Painter v0.1
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:186)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:156)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:611)
+	at net.minecraft.server.v1_5_R3.Packet15Place.handle(SourceFile:58)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:109)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.NullPointerException
+	at com.zombiehippie.bukkit.claims.CustomBlockEvent.<init>(CustomBlockEvent.java:15)
+	at com.zombiehippie.bukkit.painter.listeners.PlayerListeners.onPlayerInteraction(PlayerListeners.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 16 more
+2013-05-31 14:19:50 [SEVERE] Could not pass event PlayerInteractEvent to Canvas Painter v0.1
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:186)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:156)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:1004)
+	at net.minecraft.server.v1_5_R3.Packet18ArmAnimation.handle(SourceFile:41)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:109)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.NullPointerException
+	at com.zombiehippie.bukkit.claims.CustomBlockEvent.<init>(CustomBlockEvent.java:15)
+	at com.zombiehippie.bukkit.painter.listeners.PlayerListeners.onPlayerInteraction(PlayerListeners.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 16 more
+2013-05-31 14:19:50 [SEVERE] Could not pass event PlayerInteractEvent to Canvas Painter v0.1
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:186)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:156)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:611)
+	at net.minecraft.server.v1_5_R3.Packet15Place.handle(SourceFile:58)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:109)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.NullPointerException
+	at com.zombiehippie.bukkit.claims.CustomBlockEvent.<init>(CustomBlockEvent.java:15)
+	at com.zombiehippie.bukkit.painter.listeners.PlayerListeners.onPlayerInteraction(PlayerListeners.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 16 more
+2013-05-31 14:19:51 [SEVERE] Could not pass event PlayerInteractEvent to Canvas Painter v0.1
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:186)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:156)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:611)
+	at net.minecraft.server.v1_5_R3.Packet15Place.handle(SourceFile:58)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:109)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.NullPointerException
+	at com.zombiehippie.bukkit.claims.CustomBlockEvent.<init>(CustomBlockEvent.java:15)
+	at com.zombiehippie.bukkit.painter.listeners.PlayerListeners.onPlayerInteraction(PlayerListeners.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 16 more
+2013-05-31 14:21:42 [INFO] Unknown command. Type "help" for help.[m
+2013-05-31 14:21:45 [INFO] [Canvas Painter] Disabling Canvas Painter v0.1
+2013-05-31 14:21:45 [INFO] [Canvas Voteups] Disabling Canvas Voteups v0.1
+2013-05-31 14:21:45 [INFO] [CanvasClaims] Disabling CanvasClaims v0.1
+2013-05-31 14:21:45 [INFO] 229 recipes
+2013-05-31 14:21:45 [INFO] [CanvasClaims] Loading CanvasClaims v0.1
+2013-05-31 14:21:45 [INFO] [Canvas Voteups] Loading Canvas Voteups v0.1
+2013-05-31 14:21:45 [INFO] [Canvas Painter] Loading Canvas Painter v0.1
+2013-05-31 14:21:45 [INFO] [CanvasClaims] Enabling CanvasClaims v0.1
+2013-05-31 14:21:45 [SEVERE] Error occurred while enabling CanvasClaims v0.1 (Is it up to date?)
+org.bukkit.plugin.IllegalPluginAccessException: Unable to find handler list for event org.bukkit.event.block.BlockEvent
+	at org.bukkit.plugin.SimplePluginManager.getRegistrationClass(SimplePluginManager.java:559)
+	at org.bukkit.plugin.SimplePluginManager.getRegistrationClass(SimplePluginManager.java:557)
+	at org.bukkit.plugin.SimplePluginManager.registerEvents(SimplePluginManager.java:503)
+	at com.zombiehippie.bukkit.claims.CanvasClaims.onEnable(CanvasClaims.java:42)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:217)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:457)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:381)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.loadPlugin(CraftServer.java:282)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.enablePlugins(CraftServer.java:264)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.reload(CraftServer.java:605)
+	at org.bukkit.Bukkit.reload(Bukkit.java:185)
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:23)
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:189)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.dispatchCommand(CraftServer.java:523)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.dispatchServerCommand(CraftServer.java:512)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.an(DedicatedServer.java:262)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:227)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+2013-05-31 14:21:45 [INFO] [Canvas Voteups] Enabling Canvas Voteups v0.1
+2013-05-31 14:21:45 [INFO] [Canvas Painter] Enabling Canvas Painter v0.1
+2013-05-31 14:21:45 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2013-05-31 14:21:45 [INFO] CONSOLE: [0;32;1mReload complete.[m
+2013-05-31 14:21:49 [INFO] Plugins (3): [0;32;1mCanvasClaims[0;37;1m, [0;32;1mCanvas Voteups[0;37;1m, [0;32;1mCanvas Painter[m
+2013-05-31 14:23:38 [INFO] [Canvas Painter] Disabling Canvas Painter v0.1
+2013-05-31 14:23:38 [INFO] [Canvas Voteups] Disabling Canvas Voteups v0.1
+2013-05-31 14:23:38 [INFO] [CanvasClaims] Disabling CanvasClaims v0.1
+2013-05-31 14:23:38 [SEVERE] Error occurred while disabling CanvasClaims v0.1 (Is it up to date?)
+java.lang.NoClassDefFoundError: com/zombiehippie/bukkit/claims/visuals/ClaimVisual
+	at com.zombiehippie.bukkit.claims.CanvasClaims.onDisable(CanvasClaims.java:35)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:219)
+	at org.bukkit.plugin.java.JavaPluginLoader.disablePlugin(JavaPluginLoader.java:481)
+	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:400)
+	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:393)
+	at org.bukkit.plugin.SimplePluginManager.clearPlugins(SimplePluginManager.java:434)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.reload(CraftServer.java:575)
+	at org.bukkit.Bukkit.reload(Bukkit.java:185)
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:23)
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:189)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.dispatchCommand(CraftServer.java:523)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.dispatchServerCommand(CraftServer.java:512)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.an(DedicatedServer.java:262)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:227)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.ClassNotFoundException: com.zombiehippie.bukkit.claims.visuals.ClaimVisual
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at org.bukkit.plugin.java.PluginClassLoader.findClass0(PluginClassLoader.java:80)
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:53)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 17 more
+2013-05-31 14:23:38 [INFO] 229 recipes
+2013-05-31 14:23:38 [INFO] [CanvasClaims] Loading CanvasClaims v0.1
+2013-05-31 14:23:38 [INFO] [Canvas Voteups] Loading Canvas Voteups v0.1
+2013-05-31 14:23:38 [INFO] [Canvas Painter] Loading Canvas Painter v0.1
+2013-05-31 14:23:38 [INFO] [CanvasClaims] Enabling CanvasClaims v0.1
+2013-05-31 14:23:38 [SEVERE] [CanvasClaims] CanvasClaims v0.1 attempted to register an invalid EventHandler method signature "public void com.zombiehippie.bukkit.claims.listeners.BlockListener.onCustomBlock(com.zombiehippie.bukkit.claims.CustomBlockEvent)" in class com.zombiehippie.bukkit.claims.listeners.BlockListener
+2013-05-31 14:23:38 [INFO] [Canvas Claims] 0 claims loaded from file.
+2013-05-31 14:23:38 [INFO] [Canvas Voteups] Enabling Canvas Voteups v0.1
+2013-05-31 14:23:38 [INFO] [Canvas Painter] Enabling Canvas Painter v0.1
+2013-05-31 14:23:38 [SEVERE] Error occurred while enabling Canvas Painter v0.1 (Is it up to date?)
+java.lang.VerifyError: Bad type on operand stack in method com.zombiehippie.bukkit.painter.listeners.PlayerListeners.onPlayerInteraction(Lorg/bukkit/event/player/PlayerInteractEvent;)V at offset 163
+	at com.zombiehippie.bukkit.painter.CanvasPainter.onEnable(CanvasPainter.java:14)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:217)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:457)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:381)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.loadPlugin(CraftServer.java:282)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.enablePlugins(CraftServer.java:264)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.reload(CraftServer.java:605)
+	at org.bukkit.Bukkit.reload(Bukkit.java:185)
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:23)
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:189)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.dispatchCommand(CraftServer.java:523)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.dispatchServerCommand(CraftServer.java:512)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.an(DedicatedServer.java:262)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:227)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+2013-05-31 14:23:38 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2013-05-31 14:23:38 [INFO] CONSOLE: [0;32;1mReload complete.[m
+2013-05-31 14:26:00 [INFO] [Canvas Painter] Disabling Canvas Painter v0.1
+2013-05-31 14:26:00 [INFO] [Canvas Voteups] Disabling Canvas Voteups v0.1
+2013-05-31 14:26:00 [INFO] [CanvasClaims] Disabling CanvasClaims v0.1
+2013-05-31 14:26:00 [INFO] 229 recipes
+2013-05-31 14:26:00 [INFO] [CanvasClaims] Loading CanvasClaims v0.1
+2013-05-31 14:26:00 [INFO] [Canvas Voteups] Loading Canvas Voteups v0.1
+2013-05-31 14:26:00 [INFO] [Canvas Painter] Loading Canvas Painter v0.1
+2013-05-31 14:26:00 [INFO] [CanvasClaims] Enabling CanvasClaims v0.1
+2013-05-31 14:26:00 [SEVERE] [CanvasClaims] CanvasClaims v0.1 attempted to register an invalid EventHandler method signature "public void com.zombiehippie.bukkit.claims.listeners.BlockListener.onCustomBlock(com.zombiehippie.bukkit.claims.CustomBlockEvent)" in class com.zombiehippie.bukkit.claims.listeners.BlockListener
+2013-05-31 14:26:00 [INFO] [Canvas Claims] 0 claims loaded from file.
+2013-05-31 14:26:00 [INFO] [Canvas Voteups] Enabling Canvas Voteups v0.1
+2013-05-31 14:26:00 [INFO] [Canvas Painter] Enabling Canvas Painter v0.1
+2013-05-31 14:26:00 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2013-05-31 14:26:00 [INFO] CONSOLE: [0;32;1mReload complete.[m
+2013-05-31 14:30:10 [INFO] [Canvas Painter] Disabling Canvas Painter v0.1
+2013-05-31 14:30:10 [INFO] [Canvas Voteups] Disabling Canvas Voteups v0.1
+2013-05-31 14:30:10 [INFO] [CanvasClaims] Disabling CanvasClaims v0.1
+2013-05-31 14:30:10 [SEVERE] Error occurred while disabling CanvasClaims v0.1 (Is it up to date?)
+java.lang.NoClassDefFoundError: com/zombiehippie/bukkit/claims/visuals/ClaimVisual
+	at com.zombiehippie.bukkit.claims.CanvasClaims.onDisable(CanvasClaims.java:35)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:219)
+	at org.bukkit.plugin.java.JavaPluginLoader.disablePlugin(JavaPluginLoader.java:481)
+	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:400)
+	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:393)
+	at org.bukkit.plugin.SimplePluginManager.clearPlugins(SimplePluginManager.java:434)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.reload(CraftServer.java:575)
+	at org.bukkit.Bukkit.reload(Bukkit.java:185)
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:23)
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:189)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.dispatchCommand(CraftServer.java:523)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.dispatchServerCommand(CraftServer.java:512)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.an(DedicatedServer.java:262)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:227)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.ClassNotFoundException: com.zombiehippie.bukkit.claims.visuals.ClaimVisual
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at org.bukkit.plugin.java.PluginClassLoader.findClass0(PluginClassLoader.java:80)
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:53)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 17 more
+2013-05-31 14:30:10 [INFO] 229 recipes
+2013-05-31 14:30:10 [INFO] [CanvasClaims] Loading CanvasClaims v0.1
+2013-05-31 14:30:10 [INFO] [Canvas Voteups] Loading Canvas Voteups v0.1
+2013-05-31 14:30:10 [INFO] [Canvas Painter] Loading Canvas Painter v0.1
+2013-05-31 14:30:10 [INFO] [CanvasClaims] Enabling CanvasClaims v0.1
+2013-05-31 14:30:10 [SEVERE] Error occurred while enabling CanvasClaims v0.1 (Is it up to date?)
+org.bukkit.plugin.IllegalPluginAccessException: Unable to find handler list for event com.zombiehippie.bukkit.claims.CustomBlockEvent
+	at org.bukkit.plugin.SimplePluginManager.getRegistrationClass(SimplePluginManager.java:559)
+	at org.bukkit.plugin.SimplePluginManager.registerEvents(SimplePluginManager.java:503)
+	at com.zombiehippie.bukkit.claims.CanvasClaims.onEnable(CanvasClaims.java:42)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:217)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:457)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:381)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.loadPlugin(CraftServer.java:282)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.enablePlugins(CraftServer.java:264)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.reload(CraftServer.java:605)
+	at org.bukkit.Bukkit.reload(Bukkit.java:185)
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:23)
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:189)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.dispatchCommand(CraftServer.java:523)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.dispatchServerCommand(CraftServer.java:512)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.an(DedicatedServer.java:262)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:227)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+2013-05-31 14:30:10 [INFO] [Canvas Voteups] Enabling Canvas Voteups v0.1
+2013-05-31 14:30:10 [INFO] [Canvas Painter] Enabling Canvas Painter v0.1
+2013-05-31 14:30:10 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2013-05-31 14:30:10 [INFO] CONSOLE: [0;32;1mReload complete.[m
+2013-05-31 14:31:48 [INFO] [Canvas Painter] Disabling Canvas Painter v0.1
+2013-05-31 14:31:48 [INFO] [Canvas Voteups] Disabling Canvas Voteups v0.1
+2013-05-31 14:31:48 [INFO] [CanvasClaims] Disabling CanvasClaims v0.1
+2013-05-31 14:31:48 [SEVERE] Error occurred while disabling CanvasClaims v0.1 (Is it up to date?)
+java.lang.NoClassDefFoundError: com/zombiehippie/bukkit/claims/visuals/ClaimVisual
+	at com.zombiehippie.bukkit.claims.CanvasClaims.onDisable(CanvasClaims.java:35)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:219)
+	at org.bukkit.plugin.java.JavaPluginLoader.disablePlugin(JavaPluginLoader.java:481)
+	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:400)
+	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:393)
+	at org.bukkit.plugin.SimplePluginManager.clearPlugins(SimplePluginManager.java:434)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.reload(CraftServer.java:575)
+	at org.bukkit.Bukkit.reload(Bukkit.java:185)
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:23)
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:189)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.dispatchCommand(CraftServer.java:523)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.dispatchServerCommand(CraftServer.java:512)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.an(DedicatedServer.java:262)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:227)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.ClassNotFoundException: com.zombiehippie.bukkit.claims.visuals.ClaimVisual
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at org.bukkit.plugin.java.PluginClassLoader.findClass0(PluginClassLoader.java:80)
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:53)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 17 more
+2013-05-31 14:31:48 [INFO] 229 recipes
+2013-05-31 14:31:48 [INFO] [CanvasClaims] Loading CanvasClaims v0.1
+2013-05-31 14:31:48 [INFO] [Canvas Voteups] Loading Canvas Voteups v0.1
+2013-05-31 14:31:48 [INFO] [Canvas Painter] Loading Canvas Painter v0.1
+2013-05-31 14:31:48 [INFO] [CanvasClaims] Enabling CanvasClaims v0.1
+2013-05-31 14:31:48 [INFO] [Canvas Claims] 0 claims loaded from file.
+2013-05-31 14:31:48 [INFO] [Canvas Voteups] Enabling Canvas Voteups v0.1
+2013-05-31 14:31:48 [INFO] [Canvas Painter] Enabling Canvas Painter v0.1
+2013-05-31 14:31:48 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2013-05-31 14:31:48 [INFO] CONSOLE: [0;32;1mReload complete.[m
+2013-05-31 14:32:42 [INFO] [Canvas Painter] Disabling Canvas Painter v0.1
+2013-05-31 14:32:42 [INFO] [Canvas Voteups] Disabling Canvas Voteups v0.1
+2013-05-31 14:32:42 [INFO] [CanvasClaims] Disabling CanvasClaims v0.1
+2013-05-31 14:32:42 [SEVERE] Error occurred while disabling CanvasClaims v0.1 (Is it up to date?)
+java.lang.NoClassDefFoundError: com/zombiehippie/bukkit/claims/visuals/ClaimVisual
+	at com.zombiehippie.bukkit.claims.CanvasClaims.onDisable(CanvasClaims.java:35)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:219)
+	at org.bukkit.plugin.java.JavaPluginLoader.disablePlugin(JavaPluginLoader.java:481)
+	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:400)
+	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:393)
+	at org.bukkit.plugin.SimplePluginManager.clearPlugins(SimplePluginManager.java:434)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.reload(CraftServer.java:575)
+	at org.bukkit.Bukkit.reload(Bukkit.java:185)
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:23)
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:189)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.dispatchCommand(CraftServer.java:523)
+	at org.bukkit.craftbukkit.v1_5_R3.CraftServer.dispatchServerCommand(CraftServer.java:512)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.an(DedicatedServer.java:262)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:227)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.ClassNotFoundException: com.zombiehippie.bukkit.claims.visuals.ClaimVisual
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at org.bukkit.plugin.java.PluginClassLoader.findClass0(PluginClassLoader.java:80)
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:53)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 17 more
+2013-05-31 14:32:42 [INFO] 229 recipes
+2013-05-31 14:32:42 [INFO] [CanvasClaims] Loading CanvasClaims v0.1
+2013-05-31 14:32:42 [INFO] [Canvas Voteups] Loading Canvas Voteups v0.1
+2013-05-31 14:32:42 [INFO] [Canvas Painter] Loading Canvas Painter v0.1
+2013-05-31 14:32:42 [INFO] [CanvasClaims] Enabling CanvasClaims v0.1
+2013-05-31 14:32:42 [INFO] [Canvas Claims] 0 claims loaded from file.
+2013-05-31 14:32:42 [INFO] [Canvas Voteups] Enabling Canvas Voteups v0.1
+2013-05-31 14:32:42 [INFO] [Canvas Painter] Enabling Canvas Painter v0.1
+2013-05-31 14:32:42 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2013-05-31 14:32:42 [INFO] CONSOLE: [0;32;1mReload complete.[m
+2013-05-31 14:33:55 [INFO] [Canvas Painter] Disabling Canvas Painter v0.1
+2013-05-31 14:33:55 [INFO] [Canvas Voteups] Disabling Canvas Voteups v0.1
+2013-05-31 14:33:55 [INFO] [CanvasClaims] Disabling CanvasClaims v0.1
+2013-05-31 14:33:55 [INFO] 229 recipes
+2013-05-31 14:33:55 [INFO] [CanvasClaims] Loading CanvasClaims v0.1
+2013-05-31 14:33:55 [INFO] [Canvas Voteups] Loading Canvas Voteups v0.1
+2013-05-31 14:33:55 [INFO] [Canvas Painter] Loading Canvas Painter v0.1
+2013-05-31 14:33:55 [INFO] [CanvasClaims] Enabling CanvasClaims v0.1
+2013-05-31 14:33:55 [INFO] [Canvas Claims] 0 claims loaded from file.
+2013-05-31 14:33:55 [INFO] [Canvas Voteups] Enabling Canvas Voteups v0.1
+2013-05-31 14:33:55 [INFO] [Canvas Painter] Enabling Canvas Painter v0.1
+2013-05-31 14:33:55 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2013-05-31 14:33:55 [INFO] CONSOLE: [0;32;1mReload complete.[m
+2013-05-31 14:34:42 [INFO] [Canvas Painter] Disabling Canvas Painter v0.1
+2013-05-31 14:34:42 [INFO] [Canvas Voteups] Disabling Canvas Voteups v0.1
+2013-05-31 14:34:42 [INFO] [CanvasClaims] Disabling CanvasClaims v0.1
+2013-05-31 14:34:42 [INFO] 229 recipes
+2013-05-31 14:34:42 [INFO] [CanvasClaims] Loading CanvasClaims v0.1
+2013-05-31 14:34:42 [INFO] [Canvas Voteups] Loading Canvas Voteups v0.1
+2013-05-31 14:34:42 [INFO] [Canvas Painter] Loading Canvas Painter v0.1
+2013-05-31 14:34:42 [INFO] [CanvasClaims] Enabling CanvasClaims v0.1
+2013-05-31 14:34:42 [INFO] [Canvas Claims] 0 claims loaded from file.
+2013-05-31 14:34:42 [INFO] [Canvas Voteups] Enabling Canvas Voteups v0.1
+2013-05-31 14:34:42 [INFO] [Canvas Painter] Enabling Canvas Painter v0.1
+2013-05-31 14:34:42 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2013-05-31 14:34:42 [INFO] CONSOLE: [0;32;1mReload complete.[m
+2013-05-31 14:35:09 [INFO] AZombieHippie lost connection: disconnect.quitting
+2013-05-31 14:35:09 [INFO] Connection reset
+2013-05-31 14:35:35 [INFO] Vardel[/127.0.0.1:52278] logged in with entity id 1923 at ([MainWorld] -1361.5, 13.0, -941.5)
+2013-05-31 14:38:43 [INFO] [Canvas Painter] Disabling Canvas Painter v0.1
+2013-05-31 14:38:43 [INFO] [Canvas Voteups] Disabling Canvas Voteups v0.1
+2013-05-31 14:38:43 [INFO] [CanvasClaims] Disabling CanvasClaims v0.1
+2013-05-31 14:38:43 [INFO] 229 recipes
+2013-05-31 14:38:43 [INFO] [CanvasClaims] Loading CanvasClaims v0.1
+2013-05-31 14:38:43 [INFO] [Canvas Voteups] Loading Canvas Voteups v0.1
+2013-05-31 14:38:43 [INFO] [Canvas Painter] Loading Canvas Painter v0.1
+2013-05-31 14:38:43 [INFO] [CanvasClaims] Enabling CanvasClaims v0.1
+2013-05-31 14:38:43 [INFO] [Canvas Claims] 1 claims loaded from file.
+2013-05-31 14:38:43 [INFO] [Canvas Voteups] Enabling Canvas Voteups v0.1
+2013-05-31 14:38:43 [INFO] [Canvas Painter] Enabling Canvas Painter v0.1
+2013-05-31 14:38:43 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2013-05-31 14:38:43 [INFO] CONSOLE: [0;32;1mReload complete.[m
+2013-05-31 14:40:19 [INFO] Connection reset
+2013-05-31 14:40:19 [INFO] Vardel lost connection: disconnect.endOfStream
+2013-05-31 14:40:22 [INFO] CONSOLE: Stopping the server..[m
+2013-05-31 14:40:22 [INFO] Stopping server
+2013-05-31 14:40:22 [INFO] [Canvas Painter] Disabling Canvas Painter v0.1
+2013-05-31 14:40:22 [INFO] [Canvas Voteups] Disabling Canvas Voteups v0.1
+2013-05-31 14:40:22 [INFO] [CanvasClaims] Disabling CanvasClaims v0.1
+2013-05-31 14:40:22 [INFO] Saving players
+2013-05-31 14:40:22 [WARNING] DSCT: socket closed
+2013-05-31 14:40:22 [INFO] Saving worlds
+2013-05-31 14:40:22 [INFO] Closing listening thread
+2013-05-31 14:40:22 [INFO] Saving chunks for level 'MainWorld'/Overworld
+2013-05-31 14:40:22 [INFO] Saving chunks for level 'MainWorld_the_end'/The End
+2013-06-01 02:23:26 [INFO] Starting minecraft server version 1.5.2
+2013-06-01 02:23:26 [INFO] Loading properties
+2013-06-01 02:23:26 [INFO] Default game type: CREATIVE
+2013-06-01 02:23:26 [INFO] Generating keypair
+2013-06-01 02:23:26 [INFO] Starting Minecraft server on *:25565
+2013-06-01 02:23:27 [INFO] This server is running CraftBukkit version git-Bukkit-1.5.2-R0.1-b2771jnks (MC: 1.5.2) (Implementing API version 1.5.2-R0.1)
+2013-06-01 02:23:27 [INFO] [CanvasClaims] Loading CanvasClaims v0.1
+2013-06-01 02:23:27 [INFO] [Canvas Voteups] Loading Canvas Voteups v0.1
+2013-06-01 02:23:27 [INFO] [Canvas Painter] Loading Canvas Painter v0.1
+2013-06-01 02:23:27 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2013-06-01 02:23:27 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2013-06-01 02:23:27 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2013-06-01 02:23:27 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2013-06-01 02:23:27 [INFO] Preparing level "MainWorld"
+2013-06-01 02:23:27 [INFO] Preparing start region for level 0 (Seed: 7965850554043032289)
+2013-06-01 02:23:27 [INFO] ----- Bukkit Auto Updater -----
+2013-06-01 02:23:27 [INFO] It appears that you're running a Beta Build, when you've specified in bukkit.yml that you prefer to run Recommended Builds.
+2013-06-01 02:23:27 [INFO] If you would like to be kept informed about new Beta Build releases, it is recommended that you change 'preferred-channel' in your bukkit.yml to 'beta'.
+2013-06-01 02:23:27 [INFO] With that set, you will be told whenever a new version is available for download, so that you can always keep up to date and secure with the latest fixes.
+2013-06-01 02:23:27 [INFO] If you would like to disable this warning, simply set 'suggest-channels' to false in bukkit.yml.
+2013-06-01 02:23:27 [INFO] ----- ------------------- -----
+2013-06-01 02:23:28 [INFO] Preparing start region for level 1 (Seed: 7965850554043032289)
+2013-06-01 02:23:28 [INFO] Preparing spawn area: 49%
+2013-06-01 02:23:28 [INFO] [CanvasClaims] Enabling CanvasClaims v0.1
+2013-06-01 02:23:28 [INFO] [Canvas Claims] 1 claims loaded from file.
+2013-06-01 02:23:28 [INFO] [Canvas Voteups] Enabling Canvas Voteups v0.1
+2013-06-01 02:23:28 [INFO] [Canvas Painter] Enabling Canvas Painter v0.1
+2013-06-01 02:23:28 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2013-06-01 02:23:28 [INFO] Done (1.211s)! For help, type "help" or "?"
+2013-06-01 02:23:46 [INFO] AZombieHippie[/127.0.0.1:50390] logged in with entity id 41 at ([MainWorld] -1357.3403285182956, 21.1284239781039, -946.2560897975418)
+2013-06-01 02:24:01 [SEVERE] Could not pass event PlayerInteractEvent to Canvas Painter v0.1
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:186)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:156)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:1004)
+	at net.minecraft.server.v1_5_R3.Packet18ArmAnimation.handle(SourceFile:41)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:109)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.NullPointerException
+	at com.zombiehippie.bukkit.painter.listeners.PlayerListeners.onPlayerInteraction(PlayerListeners.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 16 more
+2013-06-01 02:24:01 [SEVERE] Could not pass event PlayerInteractEvent to Canvas Painter v0.1
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:186)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:156)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:1004)
+	at net.minecraft.server.v1_5_R3.Packet18ArmAnimation.handle(SourceFile:41)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:109)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.NullPointerException
+	at com.zombiehippie.bukkit.painter.listeners.PlayerListeners.onPlayerInteraction(PlayerListeners.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 16 more
+2013-06-01 02:24:02 [SEVERE] Could not pass event PlayerInteractEvent to Canvas Painter v0.1
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:186)
+	at net.minecraft.server.v1_5_R3.PlayerInteractManager.dig(PlayerInteractManager.java:108)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:541)
+	at net.minecraft.server.v1_5_R3.Packet14BlockDig.handle(SourceFile:46)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:109)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.NullPointerException
+	at com.zombiehippie.bukkit.painter.listeners.PlayerListeners.onPlayerInteraction(PlayerListeners.java:20)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 16 more
+2013-06-01 02:24:02 [SEVERE] Could not pass event PlayerInteractEvent to Canvas Painter v0.1
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:186)
+	at net.minecraft.server.v1_5_R3.PlayerInteractManager.dig(PlayerInteractManager.java:108)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:541)
+	at net.minecraft.server.v1_5_R3.Packet14BlockDig.handle(SourceFile:46)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:109)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.NullPointerException
+	at com.zombiehippie.bukkit.painter.listeners.PlayerListeners.onPlayerInteraction(PlayerListeners.java:20)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 16 more
+2013-06-01 02:24:02 [SEVERE] Could not pass event PlayerInteractEvent to Canvas Painter v0.1
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:186)
+	at net.minecraft.server.v1_5_R3.PlayerInteractManager.dig(PlayerInteractManager.java:108)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:541)
+	at net.minecraft.server.v1_5_R3.Packet14BlockDig.handle(SourceFile:46)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:109)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.NullPointerException
+	at com.zombiehippie.bukkit.painter.listeners.PlayerListeners.onPlayerInteraction(PlayerListeners.java:20)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 16 more
+2013-06-01 02:24:02 [SEVERE] Could not pass event PlayerInteractEvent to Canvas Painter v0.1
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:186)
+	at net.minecraft.server.v1_5_R3.PlayerInteractManager.dig(PlayerInteractManager.java:108)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:541)
+	at net.minecraft.server.v1_5_R3.Packet14BlockDig.handle(SourceFile:46)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:109)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.NullPointerException
+	at com.zombiehippie.bukkit.painter.listeners.PlayerListeners.onPlayerInteraction(PlayerListeners.java:20)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 16 more
+2013-06-01 02:24:02 [SEVERE] Could not pass event PlayerInteractEvent to Canvas Painter v0.1
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:186)
+	at net.minecraft.server.v1_5_R3.PlayerInteractManager.dig(PlayerInteractManager.java:108)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:541)
+	at net.minecraft.server.v1_5_R3.Packet14BlockDig.handle(SourceFile:46)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:109)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.NullPointerException
+	at com.zombiehippie.bukkit.painter.listeners.PlayerListeners.onPlayerInteraction(PlayerListeners.java:20)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 16 more
+2013-06-01 02:24:02 [SEVERE] Could not pass event PlayerInteractEvent to Canvas Painter v0.1
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:186)
+	at net.minecraft.server.v1_5_R3.PlayerInteractManager.dig(PlayerInteractManager.java:108)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:541)
+	at net.minecraft.server.v1_5_R3.Packet14BlockDig.handle(SourceFile:46)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:109)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.NullPointerException
+	at com.zombiehippie.bukkit.painter.listeners.PlayerListeners.onPlayerInteraction(PlayerListeners.java:20)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 16 more
+2013-06-01 02:24:03 [SEVERE] Could not pass event PlayerInteractEvent to Canvas Painter v0.1
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:186)
+	at net.minecraft.server.v1_5_R3.PlayerInteractManager.dig(PlayerInteractManager.java:108)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:541)
+	at net.minecraft.server.v1_5_R3.Packet14BlockDig.handle(SourceFile:46)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:109)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.NullPointerException
+	at com.zombiehippie.bukkit.painter.listeners.PlayerListeners.onPlayerInteraction(PlayerListeners.java:20)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 16 more
+2013-06-01 02:24:03 [SEVERE] Could not pass event PlayerInteractEvent to Canvas Painter v0.1
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:186)
+	at net.minecraft.server.v1_5_R3.PlayerInteractManager.dig(PlayerInteractManager.java:108)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:541)
+	at net.minecraft.server.v1_5_R3.Packet14BlockDig.handle(SourceFile:46)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:109)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.NullPointerException
+	at com.zombiehippie.bukkit.painter.listeners.PlayerListeners.onPlayerInteraction(PlayerListeners.java:20)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 16 more
+2013-06-01 02:24:04 [SEVERE] Could not pass event PlayerInteractEvent to Canvas Painter v0.1
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:186)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:156)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:1004)
+	at net.minecraft.server.v1_5_R3.Packet18ArmAnimation.handle(SourceFile:41)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:109)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.NullPointerException
+	at com.zombiehippie.bukkit.painter.listeners.PlayerListeners.onPlayerInteraction(PlayerListeners.java:20)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 16 more
+2013-06-01 02:24:05 [SEVERE] Could not pass event PlayerInteractEvent to Canvas Painter v0.1
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:186)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:156)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:1004)
+	at net.minecraft.server.v1_5_R3.Packet18ArmAnimation.handle(SourceFile:41)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:109)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.NullPointerException
+	at com.zombiehippie.bukkit.painter.listeners.PlayerListeners.onPlayerInteraction(PlayerListeners.java:20)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 16 more
+2013-06-01 02:24:05 [SEVERE] Could not pass event PlayerInteractEvent to Canvas Painter v0.1
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:186)
+	at net.minecraft.server.v1_5_R3.PlayerInteractManager.dig(PlayerInteractManager.java:108)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:541)
+	at net.minecraft.server.v1_5_R3.Packet14BlockDig.handle(SourceFile:46)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:109)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.NullPointerException
+	at com.zombiehippie.bukkit.painter.listeners.PlayerListeners.onPlayerInteraction(PlayerListeners.java:20)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 16 more
+2013-06-01 02:24:05 [SEVERE] Could not pass event PlayerInteractEvent to Canvas Painter v0.1
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:186)
+	at net.minecraft.server.v1_5_R3.PlayerInteractManager.dig(PlayerInteractManager.java:108)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:541)
+	at net.minecraft.server.v1_5_R3.Packet14BlockDig.handle(SourceFile:46)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:109)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.NullPointerException
+	at com.zombiehippie.bukkit.painter.listeners.PlayerListeners.onPlayerInteraction(PlayerListeners.java:20)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 16 more
+2013-06-01 02:24:05 [SEVERE] Could not pass event PlayerInteractEvent to Canvas Painter v0.1
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:186)
+	at net.minecraft.server.v1_5_R3.PlayerInteractManager.dig(PlayerInteractManager.java:108)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:541)
+	at net.minecraft.server.v1_5_R3.Packet14BlockDig.handle(SourceFile:46)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:109)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.NullPointerException
+	at com.zombiehippie.bukkit.painter.listeners.PlayerListeners.onPlayerInteraction(PlayerListeners.java:20)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 16 more
+2013-06-01 02:24:05 [SEVERE] Could not pass event PlayerInteractEvent to Canvas Painter v0.1
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:186)
+	at net.minecraft.server.v1_5_R3.PlayerInteractManager.dig(PlayerInteractManager.java:108)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:541)
+	at net.minecraft.server.v1_5_R3.Packet14BlockDig.handle(SourceFile:46)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:109)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.NullPointerException
+	at com.zombiehippie.bukkit.painter.listeners.PlayerListeners.onPlayerInteraction(PlayerListeners.java:20)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 16 more
+2013-06-01 02:24:06 [SEVERE] Could not pass event PlayerInteractEvent to Canvas Painter v0.1
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:186)
+	at net.minecraft.server.v1_5_R3.PlayerInteractManager.dig(PlayerInteractManager.java:108)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:541)
+	at net.minecraft.server.v1_5_R3.Packet14BlockDig.handle(SourceFile:46)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:109)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.NullPointerException
+	at com.zombiehippie.bukkit.painter.listeners.PlayerListeners.onPlayerInteraction(PlayerListeners.java:20)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 16 more
+2013-06-01 02:24:06 [SEVERE] Could not pass event PlayerInteractEvent to Canvas Painter v0.1
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:186)
+	at net.minecraft.server.v1_5_R3.PlayerInteractManager.dig(PlayerInteractManager.java:108)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:541)
+	at net.minecraft.server.v1_5_R3.Packet14BlockDig.handle(SourceFile:46)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:109)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.NullPointerException
+	at com.zombiehippie.bukkit.painter.listeners.PlayerListeners.onPlayerInteraction(PlayerListeners.java:20)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 16 more
+2013-06-01 02:24:06 [SEVERE] Could not pass event PlayerInteractEvent to Canvas Painter v0.1
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:186)
+	at net.minecraft.server.v1_5_R3.PlayerInteractManager.dig(PlayerInteractManager.java:108)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:541)
+	at net.minecraft.server.v1_5_R3.Packet14BlockDig.handle(SourceFile:46)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:109)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.NullPointerException
+	at com.zombiehippie.bukkit.painter.listeners.PlayerListeners.onPlayerInteraction(PlayerListeners.java:20)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 16 more
+2013-06-01 02:24:06 [SEVERE] Could not pass event PlayerInteractEvent to Canvas Painter v0.1
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:186)
+	at net.minecraft.server.v1_5_R3.PlayerInteractManager.dig(PlayerInteractManager.java:108)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:541)
+	at net.minecraft.server.v1_5_R3.Packet14BlockDig.handle(SourceFile:46)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:109)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.NullPointerException
+	at com.zombiehippie.bukkit.painter.listeners.PlayerListeners.onPlayerInteraction(PlayerListeners.java:20)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 16 more
+2013-06-01 02:24:06 [SEVERE] Could not pass event PlayerInteractEvent to Canvas Painter v0.1
+org.bukkit.event.EventException
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:427)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:477)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:462)
+	at org.bukkit.craftbukkit.v1_5_R3.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:186)
+	at net.minecraft.server.v1_5_R3.PlayerInteractManager.dig(PlayerInteractManager.java:108)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.a(PlayerConnection.java:541)
+	at net.minecraft.server.v1_5_R3.Packet14BlockDig.handle(SourceFile:46)
+	at net.minecraft.server.v1_5_R3.NetworkManager.b(NetworkManager.java:292)
+	at net.minecraft.server.v1_5_R3.PlayerConnection.d(PlayerConnection.java:109)
+	at net.minecraft.server.v1_5_R3.ServerConnection.b(SourceFile:35)
+	at net.minecraft.server.v1_5_R3.DedicatedServerConnection.b(SourceFile:30)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.r(MinecraftServer.java:581)
+	at net.minecraft.server.v1_5_R3.DedicatedServer.r(DedicatedServer.java:226)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.q(MinecraftServer.java:477)
+	at net.minecraft.server.v1_5_R3.MinecraftServer.run(MinecraftServer.java:410)
+	at net.minecraft.server.v1_5_R3.ThreadServerApplication.run(SourceFile:573)
+Caused by: java.lang.NullPointerException
+	at com.zombiehippie.bukkit.painter.listeners.PlayerListeners.onPlayerInteraction(PlayerListeners.java:20)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:425)
+	... 16 more
+2013-06-01 02:26:44 [INFO] [Canvas Painter] Disabling Canvas Painter v0.1
+2013-06-01 02:26:44 [INFO] [Canvas Voteups] Disabling Canvas Voteups v0.1
+2013-06-01 02:26:44 [INFO] [CanvasClaims] Disabling CanvasClaims v0.1
+2013-06-01 02:26:44 [INFO] 229 recipes
+2013-06-01 02:26:44 [INFO] [CanvasClaims] Loading CanvasClaims v0.1
+2013-06-01 02:26:44 [INFO] [Canvas Voteups] Loading Canvas Voteups v0.1
+2013-06-01 02:26:44 [INFO] [Canvas Painter] Loading Canvas Painter v0.1
+2013-06-01 02:26:44 [INFO] [CanvasClaims] Enabling CanvasClaims v0.1
+2013-06-01 02:26:44 [INFO] [Canvas Claims] 1 claims loaded from file.
+2013-06-01 02:26:44 [INFO] [Canvas Voteups] Enabling Canvas Voteups v0.1
+2013-06-01 02:26:44 [INFO] [Canvas Painter] Enabling Canvas Painter v0.1
+2013-06-01 02:26:44 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2013-06-01 02:26:44 [INFO] CONSOLE: [0;32;1mReload complete.[m
+2013-06-01 02:27:43 [INFO] [Canvas Painter] Disabling Canvas Painter v0.1
+2013-06-01 02:27:43 [INFO] [Canvas Voteups] Disabling Canvas Voteups v0.1
+2013-06-01 02:27:43 [INFO] [CanvasClaims] Disabling CanvasClaims v0.1
+2013-06-01 02:27:43 [INFO] 229 recipes
+2013-06-01 02:27:43 [INFO] [CanvasClaims] Loading CanvasClaims v0.1
+2013-06-01 02:27:43 [INFO] [Canvas Voteups] Loading Canvas Voteups v0.1
+2013-06-01 02:27:43 [INFO] [Canvas Painter] Loading Canvas Painter v0.1
+2013-06-01 02:27:43 [INFO] [CanvasClaims] Enabling CanvasClaims v0.1
+2013-06-01 02:27:43 [INFO] [Canvas Claims] 1 claims loaded from file.
+2013-06-01 02:27:43 [INFO] [Canvas Voteups] Enabling Canvas Voteups v0.1
+2013-06-01 02:27:43 [INFO] [Canvas Painter] Enabling Canvas Painter v0.1
+2013-06-01 02:27:43 [INFO] Server permissions file permissions.yml is empty, ignoring it
+2013-06-01 02:27:43 [INFO] CONSOLE: [0;32;1mReload complete.[m
