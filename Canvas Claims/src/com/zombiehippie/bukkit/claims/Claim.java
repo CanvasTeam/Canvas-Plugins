@@ -1,17 +1,50 @@
 package com.zombiehippie.bukkit.claims;
 
+import java.util.LinkedList;
+
 public class Claim { 
 	private String ownerName;
     
-	private final int id;
+	private int id = 0;
 	
 	private int northBoundary;
 	private int southBoundary;
 	private int eastBoundary;
 	private int westBoundary;
 
+	
+	/**
+	 * Construct a Claim
+	 */
 	public Claim(){
-		id=(int)(Math.random() * 99999);
+		// No construction needed
+	}
+	
+	public void assignUniqueId(){
+		// Find a unique id
+		int new_id=(int)(Math.random() * 99999);
+		boolean found_id = false;
+		
+		// Eventually have a hashMap <"id", "claim">
+		LinkedList<Claim> claims = CanvasClaims.getClaims();
+		
+		// While an id has not been found
+		while(!found_id) {
+			for(Claim claimCheck : claims){
+				if(claimCheck.getId() == new_id){
+					new_id=(int)(Math.random() * 99999);
+					found_id=false;
+					break;
+				}
+			}
+			// If we iterate through without "break-ing" we found an id
+			found_id=true;
+		}
+		setId(new_id);
+	}
+	
+	public void setId(int new_id){
+		this.id = new_id;
 	}
 	
 	public int getId() {

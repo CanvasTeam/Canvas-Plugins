@@ -32,11 +32,11 @@ public class CanvasClaims extends JavaPlugin {
 	@Override
 	public void onDisable() {
 		saveAll();
-		//ClaimVisual.resetAllVisuals();
+		// ClaimVisual.resetAllVisuals();
 	}
-	
+
 	@Override
-	public void onEnable() {		
+	public void onEnable() {
 		// Register our events
 		PluginManager pm = getServer().getPluginManager();
 		pm.registerEvents(blockListener, this);
@@ -45,26 +45,28 @@ public class CanvasClaims extends JavaPlugin {
 
 		// Register commands
 		getCommand("AbandonClaim").setExecutor(new AbandonCommand());
-		
+
 		// Load
 		loadAll();
 
 		instance = this;
 	}
 
-	private void saveAll(){
-		File allClaimsConfigFile = new File(getDataFolder() + File.separator + "claims", "claims.yml");
-        FileConfiguration allClaims = new YamlConfiguration();
-        int id = 0;
-        String pre = "claim.";
-        
+	private void saveAll() {
+		File allClaimsConfigFile = new File(getDataFolder() + File.separator
+				+ "claims", "claims.yml");
+		FileConfiguration allClaims = new YamlConfiguration();
+		// Will eventually use the actual claim ids
+		int id = 0;
+		String pre = "claim.";
+
 		for (Claim next : claims) {
 			id++;
 			allClaims.set(pre + id + ".own", next.getOwnerName());
 			allClaims.set(pre + id + ".n", next.getNorthBoundary());
 			allClaims.set(pre + id + ".e", next.getEastBoundary());
 			allClaims.set(pre + id + ".s", next.getSouthBoundary());
-			allClaims.set(pre + id + ".w", next.getWestBoundary());			
+			allClaims.set(pre + id + ".w", next.getWestBoundary());
 		}
 		try {
 			allClaims.save(allClaimsConfigFile);
@@ -72,14 +74,14 @@ public class CanvasClaims extends JavaPlugin {
 			e.printStackTrace();
 		}
 	}
-	
+
 	private void loadAll() {
 		File allClaimsConfigFile = new File(getDataFolder() + File.separator
 				+ "claims", "claims.yml");
 		FileConfiguration allClaims = YamlConfiguration
 				.loadConfiguration(allClaimsConfigFile);
-		
-        String pre = "claim.";
+
+		String pre = "claim.";
 
 		for (int id = 1; allClaims.contains(pre + id); id++) {
 			Claim next = new Claim();
@@ -90,7 +92,8 @@ public class CanvasClaims extends JavaPlugin {
 			next.setWestBoundary((int) allClaims.get(pre + id + ".w"));
 			claims.add(next);
 		}
-		System.out.println("[Canvas Claims] "+claims.size()+" claims loaded from file.");
+		System.out.println("[Canvas Claims] " + claims.size()
+				+ " claims loaded from file.");
 	}
 
 	/**
@@ -105,29 +108,42 @@ public class CanvasClaims extends JavaPlugin {
 	 */
 	public void createClaim(Player User, Location first, Location second) {
 		Claim new_claim = new Claim();
+
+		// Setup the new claim with boundaries
 		new_claim.setupClaim(User.getName(), (int) first.getX(),
 				(int) first.getZ(), (int) second.getX(), (int) second.getZ());
+
+		// Check that the claim meets minimum size requirements
 		if (new_claim.getHeight() < 7 || new_claim.getWidth() < 7) {
 			User.sendMessage(ChatColor.RED
 					+ "Your claim needs to be at least 7x7 blocks!");
 			new ClaimVisual(User, new_claim, ResultType.TOOSMALL);
 			return;
 		}
+
+		// Look for intersecting claims
 		List<Claim> intersecting = getClaimsIntersecting(new_claim);
 		if (intersecting == null || intersecting.size() == 0) {
 			// Found no intersecting claims
+			
+			//assign id
+			new_claim.assignUniqueId();
+			//add to list
 			addClaim(new_claim);
+			//reset shovel
 			PlayerListener.resetShovel(User);
 			new ClaimVisual(User, new Claim[] { new_claim }, ResultType.CREATE);
 		} else {
 			// Found at least one intersecting claims
-			new ClaimVisual(User, intersecting.toArray(new Claim[0]), ResultType.INTERSECT);
+			new ClaimVisual(User, intersecting.toArray(new Claim[0]),
+					ResultType.INTERSECT);
 		}
 	}
 
 	public boolean owns(String UserName, Block block) {
 		Claim claim = getClaimAt(block);
-		return claim == null || claim.ownsClaim(UserName);
+		// User owns the claim
+		return claim.ownsClaim(UserName);
 	}
 
 	/**
@@ -140,12 +156,13 @@ public class CanvasClaims extends JavaPlugin {
 	public Claim getClaimAt(Block block) {
 		Iterator<Claim> it = claims.iterator();
 		while (it.hasNext()) {
+			// iterate through all claims
 			Claim next = it.next();
 			if (next.isInside(block.getX(), block.getZ())) {
 				return next;
 			}
 		}
-
+		// Did not find a claim
 		return null;
 	}
 
@@ -168,10 +185,6 @@ public class CanvasClaims extends JavaPlugin {
 		return claims;
 	}
 
-	public boolean removeClaimAt(Player player) {
-		return false;
-	}
-
 	/**
 	 * Gets the first claim to intersect the area provided
 	 * 
@@ -191,12 +204,18 @@ public class CanvasClaims extends JavaPlugin {
 		}
 		return intersectingClaims;
 	}
+
 	public void addClaim(Claim theClaim) {
 		claims.add(theClaim);
 		saveAll();
 	}
+
 	public void removeClaim(Claim theClaim) {
 		claims.remove(theClaim);
 
+	}
+
+	public static LinkedList<Claim> getClaims() {
+		return claims;
 	}
 }
