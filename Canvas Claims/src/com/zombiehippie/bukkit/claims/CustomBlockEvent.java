@@ -10,17 +10,23 @@ public class CustomBlockEvent extends Event implements Cancellable {
     private final boolean claimed;
     private final String ownerName;
     private final String playerName;
-	public CustomBlockEvent(String player, Block theBlock) {
+    private boolean cancelled = false;
+	public CustomBlockEvent(String thePlayerName, Block theBlock) {
 		Claim theClaim = CanvasClaims.instance.getClaimAt(theBlock);
+		
+		// isClaimed If claim isn't null
 		claimed=(theClaim != null);
+		
+		// ownerName may = "" if iClaimed == false
 		ownerName=claimed?theClaim.getOwnerName():"";
-		playerName = player;
+		
+		// 
+		playerName = thePlayerName;
 	}
 
 	@Override
 	public boolean isCancelled() {
-		// TODO Auto-generated method stub
-		return false;
+		return cancelled;
 	}
 
 	public boolean isClaimed(){
@@ -32,7 +38,8 @@ public class CustomBlockEvent extends Event implements Cancellable {
 	}
 
 	public boolean isOwner(){
-		return playerName == ownerName;
+		// Check if player's Name and Owner's name match
+		return playerName.equals(ownerName);
 	}
 	
 	public String getOwner(){
@@ -41,8 +48,7 @@ public class CustomBlockEvent extends Event implements Cancellable {
 	
 	@Override
 	public void setCancelled(boolean cancel) {
-		// TODO Auto-generated method stub
-		
+		cancelled = cancel;		
 	}
 	
 	@Override
