@@ -1,0 +1,8 @@
+name: Canvas Claim Facets
+version: 0.1
+description: This is an add-on for a claims management plugin
+author: ZombieHippie
+authors: [CornyZombie, zerdang]
+database: false
+
+main: com.zombiehippie.bukkit.claimfacets.ClaimFacets

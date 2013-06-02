@@ -2,7 +2,7 @@ name: CanvasClaims
 version: 0.1
 description: This is a claims management plugin
 author: ZombieHippie
-authors: [CornyZombie, ChineseZombie]
+authors: [CornyZombie, zerdang]
 database: false
 
 main: com.zombiehippie.bukkit.claims.CanvasClaims

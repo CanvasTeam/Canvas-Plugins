@@ -2,7 +2,7 @@ name: Canvas Painter
 version: 0.1
 description: This is a construction utility
 author: ZombieHippie
-authors: [CornyZombie, ChineseZombie]
+authors: [CornyZombie, zerdang]
 depend: [CanvasClaims]
 
 main: com.zombiehippie.bukkit.painter.CanvasPainter
