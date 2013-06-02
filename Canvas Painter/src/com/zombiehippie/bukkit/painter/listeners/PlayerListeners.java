@@ -8,7 +8,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerInteractEvent;
 
-import com.zombiehippie.bukkit.claims.CustomBlockEvent;
+import com.zombiehippie.bukkit.claims.events.CustomBlockEvent;
 
 public class PlayerListeners implements Listener{
 

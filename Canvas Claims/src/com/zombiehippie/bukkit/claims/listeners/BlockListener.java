@@ -10,7 +10,7 @@ import org.bukkit.event.player.PlayerBucketEmptyEvent;
 import org.bukkit.event.player.PlayerBucketFillEvent;
 
 import com.zombiehippie.bukkit.claims.CanvasClaims;
-import com.zombiehippie.bukkit.claims.CustomBlockEvent;
+import com.zombiehippie.bukkit.claims.events.CustomBlockEvent;
 
 public class BlockListener implements Listener{
 	@EventHandler

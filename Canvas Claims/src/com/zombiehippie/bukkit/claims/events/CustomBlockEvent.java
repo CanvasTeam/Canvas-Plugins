@@ -1,9 +1,12 @@
-package com.zombiehippie.bukkit.claims;
+package com.zombiehippie.bukkit.claims.events;
 
 import org.bukkit.block.Block;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
+
+import com.zombiehippie.bukkit.claims.CanvasClaims;
+import com.zombiehippie.bukkit.claims.Claim;
 
 public class CustomBlockEvent extends Event implements Cancellable {
     private static final HandlerList handlers = new HandlerList();
