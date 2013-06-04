@@ -121,6 +121,10 @@ public class CanvasClaims extends JavaPlugin {
 
 		// Check to see if this claim is cancelled by another plugin
 		if(!claimevt.isCancelled()){
+			// In case a plugin sets the claim or User to something else
+			new_claim = claimevt.getClaim();
+			User = claimevt.getPlayer();
+			
 			// Check that the claim meets minimum size requirements
 			if (new_claim.getHeight() < 7 || new_claim.getWidth() < 7) {
 				User.sendMessage(ChatColor.RED
