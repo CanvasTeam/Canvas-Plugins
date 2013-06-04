@@ -72,7 +72,7 @@ public class ClaimVisual extends Visual{
 		case INTERSECT:
 			// If there is a claim already there
 			error(player);
-			player.sendMessage(ChatColor.RED+"Claim interesects at least one nearby claim!");
+			player.sendMessage(ChatColor.RED+"Claim intersects at least one nearby claim!");
 			break;
 		case RESIZE:
 			// If we resized our claim

@@ -1,7 +1,6 @@
 package com.zombiehippie.bukkit.claims.listeners;
 
 import java.util.HashMap;
-import java.util.List;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
@@ -26,28 +25,41 @@ public class PlayerListener implements Listener{
 		// When the player Right click interacts with air or a block
 		Player player = event.getPlayer();
 		if(event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK){
+			// Get the block we are pointing at from at least 150 blocks away
+			Block block = player.getTargetBlock(null, 150);
+			
+			if(block.isEmpty()) {
+				// If block returns as air, we are clicking too far away
+				player.sendMessage(ChatColor.GOLD+"You clicked too far away!");
+				return;
+			}
+			
+			// Get the clicked claim
+			Claim clicked_claim = CanvasClaims.instance.getClaimAt(block);
+			
 			if(event.getMaterial().getId() == Material.GOLD_SPADE.getId()){
-				List<Block> blocks = player.getLastTwoTargetBlocks(null, 150);
-				if(blocks.isEmpty() || blocks.get(1).isEmpty()) {
-					player.sendMessage(ChatColor.GOLD+"You clicked too far away!");
-					return;
-				}
-				if(lastClicked.containsKey(player.getName())){
-					Location last = lastClicked.get(player.getName());
-					// Try to create the claim, get a result back
-					CanvasClaims.instance.createClaim(player, last, blocks.get(1).getLocation());
+				// Try to create a claim
+				if(clicked_claim != null){
+					// Clicked a claim while trying to create a claim
+					new ClaimVisual(player, clicked_claim, ResultType.INTERSECT);
 				} else {
-					player.sendBlockChange(blocks.get(1).getLocation(), Material.GLOWSTONE, (byte) 0);
-					lastClicked.put(player.getName(), blocks.get(1).getLocation());
-					player.sendMessage(ChatColor.AQUA+"First Block selected");
+					// Did not click a claim
+					
+					// If the player has already clicked a block
+					if(lastClicked.containsKey(player.getName())){
+						// Get the last clicked block
+						Location last = lastClicked.get(player.getName());
+						// notify
+						player.sendMessage(ChatColor.AQUA+"Second Block selected");
+						// Try to create the claim, get a result back
+						CanvasClaims.instance.createClaim(player, last, block.getLocation());
+					} else {
+						player.sendBlockChange(block.getLocation(), Material.GLOWSTONE, (byte) 0);
+						lastClicked.put(player.getName(), block.getLocation());
+						player.sendMessage(ChatColor.AQUA+"First Block selected");
+					}
 				}
 			} else if (event.getMaterial().getId() == Material.BOOK.getId()){
-				List<Block> blocks = player.getLastTwoTargetBlocks(null, 150);
-				if(blocks.isEmpty() || blocks.get(1).isEmpty()) {
-					player.sendMessage(ChatColor.GOLD+"You clicked too far away!");
-					return;
-				}
-				Claim clicked_claim = CanvasClaims.instance.getClaimAt(blocks.get(1));
 				if(clicked_claim != null){
 					// Claim info needed
 					new ClaimVisual(player, clicked_claim, ResultType.INFO);

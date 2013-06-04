@@ -1,11 +1,9 @@
 package com.zombiehippie.bukkit.claims.events;
 
-import org.bukkit.block.Block;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
-import com.zombiehippie.bukkit.claims.CanvasClaims;
 import com.zombiehippie.bukkit.claims.Claim;
 
 public class PlayerClaimEvent extends Event implements Cancellable {
