@@ -17,9 +17,10 @@ public class ClaimFacets extends JavaPlugin {
 		
 		pm.registerEvents(new ClaimListener(), this);
 		
+		
 	}
 	@Override
 	public void onDisable(){
-		
+		// This is how we PUSH to github
 	}
 }
