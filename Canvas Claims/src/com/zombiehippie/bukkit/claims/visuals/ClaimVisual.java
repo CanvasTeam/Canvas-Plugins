@@ -101,8 +101,14 @@ public class ClaimVisual extends Visual{
 	 */
 	public static void resetPlayersVisuals(String playerName){
 		if(activeVisuals.containsKey(playerName)){
+			
 			ClaimVisual theVisual = activeVisuals.get(playerName);
-			theVisual.reset(Bukkit.getPlayerExact(playerName));
+			
+			// Check if player is online
+			Player p = Bukkit.getPlayerExact(playerName);
+			if(p != null && p.isOnline())
+				theVisual.reset(p);
+			
 			activeVisuals.remove(playerName);
 		}
 		

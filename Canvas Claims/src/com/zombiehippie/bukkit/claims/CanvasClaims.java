@@ -6,6 +6,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.block.Block;
@@ -17,6 +18,7 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.zombiehippie.bukkit.claims.commands.AbandonCommand;
+import com.zombiehippie.bukkit.claims.events.ClaimLoadEvent;
 import com.zombiehippie.bukkit.claims.events.PlayerClaimEvent;
 import com.zombiehippie.bukkit.claims.listeners.BlockListener;
 import com.zombiehippie.bukkit.claims.listeners.PlayerListener;
@@ -31,7 +33,7 @@ public class CanvasClaims extends JavaPlugin {
 	@Override
 	public void onDisable() {
 		saveAll();
-		// ClaimVisual.resetAllVisuals();
+		ClaimVisual.resetAllVisuals();
 	}
 
 	@Override
@@ -82,6 +84,8 @@ public class CanvasClaims extends JavaPlugin {
 				.loadConfiguration(allClaimsConfigFile);
 		
 		String pre = "claims.";
+		
+		PluginManager pm = Bukkit.getPluginManager();
 
 		for (int id = 1; allClaims.contains(pre + id); id++) {
 			Claim next = new Claim();
@@ -91,6 +95,9 @@ public class CanvasClaims extends JavaPlugin {
 			next.setEastBoundary((int) allClaims.get(pre + id + ".e"));
 			next.setSouthBoundary((int) allClaims.get(pre + id + ".s"));
 			next.setWestBoundary((int) allClaims.get(pre + id + ".w"));
+			
+			pm.callEvent(new ClaimLoadEvent(next));
+			
 			claims.add(next);
 		}
 		System.out.println("[Canvas Claims] " + claims.size()
@@ -114,49 +121,45 @@ public class CanvasClaims extends JavaPlugin {
 		new_claim.setupClaim(User.getName(), (int) first.getX(),
 				(int) first.getZ(), (int) second.getX(), (int) second.getZ());
 
-		PlayerClaimEvent claimevt = new PlayerClaimEvent(User.getName(), new_claim);
-		
-		this.getServer().getPluginManager()
-				.callEvent(claimevt);
+		// Check that the claim meets minimum size requirements
+		if (new_claim.getHeight() < 7 || new_claim.getWidth() < 7) {
+			User.sendMessage(ChatColor.RED
+					+ "Your claim needs to be at least 7x7 blocks!");
+			new ClaimVisual(User, new_claim, ResultType.TOOSMALL);
+			return;
+		}
 
-		// Check to see if this claim is cancelled by another plugin
-		if(!claimevt.isCancelled()){
-			// In case a plugin sets the claim or User to something else
-			new_claim = claimevt.getClaim();
-			User = claimevt.getPlayer();
+		// Look for intersecting claims
+		List<Claim> intersecting = getClaimsIntersecting(new_claim);
+		if (intersecting == null || intersecting.size() == 0) {
+			// Found no intersecting claims
+			// Call event
+			PlayerClaimEvent claimevt = new PlayerClaimEvent(User.getName(),
+					new_claim);
+
+			this.getServer().getPluginManager().callEvent(claimevt);
+
+			if(claimevt.isCancelled())
+				return; // if the event was cancelled
 			
-			// Check that the claim meets minimum size requirements
-			if (new_claim.getHeight() < 7 || new_claim.getWidth() < 7) {
-				User.sendMessage(ChatColor.RED
-						+ "Your claim needs to be at least 7x7 blocks!");
-				new ClaimVisual(User, new_claim, ResultType.TOOSMALL);
-				return;
-			}
-	
-			// Look for intersecting claims
-			List<Claim> intersecting = getClaimsIntersecting(new_claim);
-			if (intersecting == null || intersecting.size() == 0) {
-				// Found no intersecting claims
-	
-				// assign id
-				new_claim.assignUniqueId();
-				// add to list
-				addClaim(new_claim);
-				// reset shovel
-				PlayerListener.resetShovel(User);
-				new ClaimVisual(User, new Claim[] { new_claim }, ResultType.CREATE);
-			} else {
-				// Found at least one intersecting claims
-				new ClaimVisual(User, intersecting.toArray(new Claim[0]),
-						ResultType.INTERSECT);
-			}
+			// assign id
+			new_claim.assignUniqueId();
+			// add to list
+			addClaim(new_claim);
+			// reset shovel
+			PlayerListener.resetShovel(User);
+			new ClaimVisual(User, new Claim[] { new_claim }, ResultType.CREATE);
+		} else {
+			// Found at least one intersecting claims
+			new ClaimVisual(User, intersecting.toArray(new Claim[0]),
+					ResultType.INTERSECT);
 		}
 	}
 
 	public boolean owns(String UserName, Block block) {
 		Claim claim = getClaimAt(block);
 		// User owns the claim
-		return claim.ownsClaim(UserName);
+		return claim!=null?claim.ownsClaim(UserName):false;
 	}
 
 	/**
