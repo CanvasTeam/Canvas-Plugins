@@ -1,5 +1,6 @@
 package com.zombiehippie.bukkit.claims.commands;
 
+import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -7,6 +8,7 @@ import org.bukkit.entity.Player;
 
 import com.zombiehippie.bukkit.claims.CanvasClaims;
 import com.zombiehippie.bukkit.claims.Claim;
+import com.zombiehippie.bukkit.claims.events.PlayerUnclaimEvent;
 import com.zombiehippie.bukkit.claims.visuals.ClaimVisual;
 
 public class AbandonCommand implements CommandExecutor {
@@ -22,6 +24,11 @@ public class AbandonCommand implements CommandExecutor {
 		
 		if(theClaim != null && theClaim.ownsClaim(thePlayer.getName())){
 			CanvasClaims.instance.removeClaim(theClaim);
+			// Call event
+			PlayerUnclaimEvent claimevt = new PlayerUnclaimEvent(theClaim);
+
+			Bukkit.getServer().getPluginManager().callEvent(claimevt);
+			
 			ClaimVisual.resetPlayersVisuals(thePlayer.getName());
 		}
 		return true;
