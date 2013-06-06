@@ -1,7 +1,85 @@
-claim:
+claims:
   '1':
+    id: 64868
     own: AZombieHippie
-    n: 244
-    e: -1023
-    s: 223
-    w: -1036
+    n: 1200
+    e: 161
+    s: 1190
+    w: 154
+  '2':
+    id: 23199
+    own: AZombieHippie
+    n: 1197
+    e: 169
+    s: 1190
+    w: 162
+  '3':
+    id: 58716
+    own: AZombieHippie
+    n: 1189
+    e: 169
+    s: 1182
+    w: 162
+  '4':
+    id: 48906
+    own: zerdang
+    n: 1189
+    e: 161
+    s: 1182
+    w: 154
+  '5':
+    id: 49535
+    own: zerdang
+    n: 1189
+    e: 177
+    s: 1182
+    w: 170
+  '6':
+    id: 5304
+    own: zerdang
+    n: 1197
+    e: 177
+    s: 1190
+    w: 170
+  '7':
+    id: 45345
+    own: AZombieHippie
+    n: 1205
+    e: 177
+    s: 1198
+    w: 170
+  '8':
+    id: 61742
+    own: AZombieHippie
+    n: 1205
+    e: 185
+    s: 1198
+    w: 178
+  '9':
+    id: 60958
+    own: AZombieHippie
+    n: 1205
+    e: 193
+    s: 1198
+    w: 186
+  '10':
+    id: 37122
+    own: AZombieHippie
+    n: 1197
+    e: 193
+    s: 1190
+    w: 186
+  '11':
+    id: 17767
+    own: AZombieHippie
+    n: 1197
+    e: 185
+    s: 1190
+    w: 178
+  '12':
+    id: 21552
+    own: zerdang
+    n: 1189
+    e: 185
+    s: 1182
+    w: 178
