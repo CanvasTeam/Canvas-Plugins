@@ -20,7 +20,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 import com.zombiehippie.bukkit.claims.commands.AbandonCommand;
 import com.zombiehippie.bukkit.claims.events.ClaimLoadEvent;
 import com.zombiehippie.bukkit.claims.events.PlayerClaimEvent;
-import com.zombiehippie.bukkit.claims.listeners.BlockListener;
 import com.zombiehippie.bukkit.claims.listeners.PlayerListener;
 import com.zombiehippie.bukkit.claims.listeners.WorldListener;
 import com.zombiehippie.bukkit.claims.visuals.ClaimVisual;
@@ -40,7 +39,6 @@ public class CanvasClaims extends JavaPlugin {
 	public void onEnable() {
 		// Register our events
 		PluginManager pm = getServer().getPluginManager();
-		pm.registerEvents(new BlockListener(), this);
 		pm.registerEvents(new WorldListener(), this);
 		pm.registerEvents(new PlayerListener(), this);
 
