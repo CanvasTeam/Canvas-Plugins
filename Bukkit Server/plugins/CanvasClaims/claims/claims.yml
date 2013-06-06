@@ -83,3 +83,192 @@ claims:
     e: 185
     s: 1182
     w: 178
+  '13':
+    id: 61249
+    own: AZombieHippie
+    n: 1181
+    e: 169
+    s: 1174
+    w: 162
+  '14':
+    id: 80997
+    own: AZombieHippie
+    n: 1181
+    e: 177
+    s: 1174
+    w: 170
+  '15':
+    id: 1333
+    own: AZombieHippie
+    n: 1181
+    e: 185
+    s: 1174
+    w: 178
+  '16':
+    id: 69012
+    own: AZombieHippie
+    n: 1164
+    e: 203
+    s: 1157
+    w: 196
+  '17':
+    id: 10037
+    own: AZombieHippie
+    n: 1164
+    e: 211
+    s: 1157
+    w: 204
+  '18':
+    id: 1847
+    own: AZombieHippie
+    n: 1156
+    e: 211
+    s: 1149
+    w: 204
+  '19':
+    id: 29797
+    own: AZombieHippie
+    n: 1126
+    e: 223
+    s: 1119
+    w: 216
+  '20':
+    id: 18293
+    own: AZombieHippie
+    n: 1134
+    e: 223
+    s: 1127
+    w: 216
+  '21':
+    id: 69020
+    own: AZombieHippie
+    n: 1134
+    e: 215
+    s: 1127
+    w: 208
+  '22':
+    id: 64274
+    own: AZombieHippie
+    n: 1126
+    e: 231
+    s: 1119
+    w: 224
+  '23':
+    id: 77571
+    own: AZombieHippie
+    n: 1134
+    e: 231
+    s: 1127
+    w: 224
+  '24':
+    id: 93437
+    own: AZombieHippie
+    n: 1142
+    e: 223
+    s: 1135
+    w: 216
+  '25':
+    id: 32321
+    own: AZombieHippie
+    n: 1142
+    e: 231
+    s: 1135
+    w: 224
+  '26':
+    id: 40825
+    own: AZombieHippie
+    n: 1142
+    e: 215
+    s: 1135
+    w: 208
+  '27':
+    id: 69458
+    own: AZombieHippie
+    n: 1155
+    e: 231
+    s: 1148
+    w: 224
+  '28':
+    id: 97003
+    own: AZombieHippie
+    n: 1155
+    e: 239
+    s: 1148
+    w: 232
+  '29':
+    id: 48118
+    own: AZombieHippie
+    n: 1163
+    e: 239
+    s: 1156
+    w: 232
+  '30':
+    id: 93722
+    own: AZombieHippie
+    n: 1163
+    e: 231
+    s: 1156
+    w: 224
+  '31':
+    id: 3449
+    own: AZombieHippie
+    n: 1171
+    e: 247
+    s: 1164
+    w: 240
+  '32':
+    id: 91830
+    own: AZombieHippie
+    n: 1179
+    e: 247
+    s: 1172
+    w: 240
+  '33':
+    id: 40717
+    own: AZombieHippie
+    n: 1179
+    e: 255
+    s: 1172
+    w: 248
+  '34':
+    id: 99813
+    own: AZombieHippie
+    n: 1171
+    e: 255
+    s: 1164
+    w: 248
+  '35':
+    id: 96599
+    own: AZombieHippie
+    n: 1171
+    e: 263
+    s: 1164
+    w: 256
+  '36':
+    id: 55380
+    own: AZombieHippie
+    n: 1179
+    e: 263
+    s: 1172
+    w: 256
+  '37':
+    id: 13279
+    own: AZombieHippie
+    n: 1187
+    e: 263
+    s: 1180
+    w: 256
+  '38':
+    id: 75504
+    own: AZombieHippie
+    n: 1187
+    e: 255
+    s: 1180
+    w: 248
+  '39':
+    id: 30575
+    own: AZombieHippie
+    n: 1187
+    e: 247
+    s: 1180
+    w: 240

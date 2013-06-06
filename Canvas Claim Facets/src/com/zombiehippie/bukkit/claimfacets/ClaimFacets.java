@@ -3,8 +3,10 @@ package com.zombiehippie.bukkit.claimfacets;
 import java.util.TreeMap;
 
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
+import org.bukkit.World;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
@@ -33,7 +35,7 @@ public class ClaimFacets extends JavaPlugin implements Listener {
 	}
 	@Override
 	public void onDisable(){
-		// This is how we PUSH to github
+		
 	}
 	
 	public Integer blockToRegionCoord(int blockCoord){
@@ -76,19 +78,25 @@ public class ClaimFacets extends JavaPlugin implements Listener {
 		int c = regionCode(facet.getX(),facet.getZ());
 		FacetRegion fr = lookupRegion(c);
 		fr.registerFacet(facet);
+		int x = facet.getX();
+		int z = facet.getZ();
 
-		Bukkit.getWorlds().get(0)
-		.getHighestBlockAt(facet.getX(), facet.getZ()).getRelative(0,-1,0)
-		.setType(Material.GOLD_BLOCK);
-		Bukkit.getWorlds().get(0)
-		.getHighestBlockAt(facet.getX(), facet.getZ()).getRelative(-1,-1,-1)
-		.setType(Material.GOLD_BLOCK);
-		Bukkit.getWorlds().get(0)
-		.getHighestBlockAt(facet.getX(), facet.getZ()).getRelative(-1,-1,0)
-		.setType(Material.GOLD_BLOCK);
-		Bukkit.getWorlds().get(0)
-		.getHighestBlockAt(facet.getX(), facet.getZ()).getRelative(0,-1,-1)
-		.setType(Material.GOLD_BLOCK);
+		getWorld()
+		.getHighestBlockAt(x, z).getRelative(0,-1,0)
+		.setType(facet.isQuadrantAvailable(Quadrant.NE)?Material.DIAMOND_BLOCK:Material.IRON_BLOCK);
+		getWorld()
+		.getHighestBlockAt(x-1,z).getRelative(0,-1,0)
+		.setType(facet.isQuadrantAvailable(Quadrant.NW)?Material.DIAMOND_BLOCK:Material.IRON_BLOCK);
+		getWorld()
+		.getHighestBlockAt(x-1, z-1).getRelative(0,-1,0)
+		.setType(facet.isQuadrantAvailable(Quadrant.SW)?Material.DIAMOND_BLOCK:Material.IRON_BLOCK);
+		getWorld()
+		.getHighestBlockAt(x, z-1).getRelative(0,-1,0)
+		.setType(facet.isQuadrantAvailable(Quadrant.SE)?Material.DIAMOND_BLOCK:Material.IRON_BLOCK);
+	}
+	
+	public static World getWorld(){
+		return Bukkit.getWorlds().get(0);
 	}
 	
 	@EventHandler
@@ -120,43 +128,52 @@ public class ClaimFacets extends JavaPlugin implements Listener {
 	}
 	@EventHandler
 	public void onPlayerInteractEvent(PlayerInteractEvent event){
-		if(event.getAction()==Action.RIGHT_CLICK_BLOCK&&event.getMaterial()==Material.DIAMOND_SPADE){
-			int x = event.getClickedBlock().getX();
-			int z = event.getClickedBlock().getZ();
-			Quadrant quad = lookupFacet(x,z);
-			if(quad == null){
-				event.getPlayer().sendMessage("Click a facet to make a claim!");
-				return;
-			}
-			if(quad.available){
-				int x2 = x;
-				int z2 = z;
-				switch(quad){
-				case NE:
-					x2+=7;
-					z2+=7;
-					break;
-				case NW:
-					x2-=7;
-					z2+=7;
-					break;
-				case SE:
-					x2+=7;
-					z2-=7;
-					break;
-				case SW:
-					x2-=7;
-					z2-=7;
-					break;
+		if(event.getAction()==Action.RIGHT_CLICK_BLOCK){
+			if(event.getMaterial()==Material.DIAMOND_SPADE) {
+				int x = event.getClickedBlock().getX();
+				int z = event.getClickedBlock().getZ();
+				Quadrant quad = lookupFacet(x,z);
+				if(quad == null){
+					if(event.getPlayer().isOp()){
+						registerFacet(new Facet(x,z,Quadrant.NE,true));
+						event.getPlayer().sendMessage(ChatColor.GREEN + "New Facet established!");
+					} else {
+						event.getPlayer().sendMessage("Click a facet to make a claim!");
+					}
+					return;
 				}
+				if(quad.available){
+					int x2 = x;
+					int z2 = z;
+					switch(quad){
+					case NE:
+						x2+=7;
+						z2+=7;
+						break;
+					case NW:
+						x2-=7;
+						z2+=7;
+						break;
+					case SE:
+						x2+=7;
+						z2-=7;
+						break;
+					case SW:
+						x2-=7;
+						z2-=7;
+						break;
+					}
+					
+					CanvasClaims.instance.createClaim(event.getPlayer()
+							, event.getClickedBlock().getLocation()
+							, new Location(event.getPlayer().getWorld(),x2,0,z2));
+				}
+				String msg = "Facet: ";
+				msg+= quad!=null?quad.toString():"NULL";
+				event.getPlayer().sendMessage(msg);
+			} else if(event.getMaterial()==Material.BOOK){
 				
-				CanvasClaims.instance.createClaim(event.getPlayer()
-						, event.getClickedBlock().getLocation()
-						, new Location(event.getPlayer().getWorld(),x2,0,z2));
 			}
-			String msg = "Facet: ";
-			msg+= quad!=null?quad.toString():"NULL";
-			event.getPlayer().sendMessage(msg);
 		}
 	}
 }

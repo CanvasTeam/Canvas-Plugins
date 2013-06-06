@@ -32,14 +32,15 @@ public class FacetRegion {
 		return null;
 	}
 
-	public void registerFacet(Facet facet) {
+	public Facet registerFacet(Facet facet) {
 		Facet looked = lookupFacet(facet.getX(),facet.getZ());
 		
 		if(looked != null) {
-			looked.useQuadrants(facet);
-		} else {
-			this.facets.add(facet);
+			this.facets.remove(looked);
+			facet.useQuadrants(looked);
 		}
+		this.facets.add(facet);
+		return facet;
 		
 	}
 	

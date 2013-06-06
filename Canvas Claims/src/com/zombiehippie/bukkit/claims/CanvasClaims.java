@@ -146,8 +146,7 @@ public class CanvasClaims extends JavaPlugin {
 			new_claim.assignUniqueId();
 			// add to list
 			addClaim(new_claim);
-			// reset shovel
-			PlayerListener.resetShovel(User);
+			
 			new ClaimVisual(User, new Claim[] { new_claim }, ResultType.CREATE);
 		} else {
 			// Found at least one intersecting claims

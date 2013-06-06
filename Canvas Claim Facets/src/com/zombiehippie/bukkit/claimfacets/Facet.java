@@ -39,13 +39,24 @@ public class Facet {
 	private final int NEptZ;
 	
 	/**
-	 * Establish a new facet
+	 * Establish a new facet off of a claim
 	 * 
 	 * @param cornerX the X location of the claim's corner
 	 * @param cornerZ the Z location of the claim's corner
-	 * @param quad
+	 * @param quad the claim corner's quadrant relative to the claim
 	 */
 	public Facet (int cornerX, int cornerZ, Quadrant quad) {
+		this(cornerX, cornerZ, quad, false);
+	}
+	
+	/**
+	 * Establish a Facet that is connected to a claim or not
+	 * @param cornerX z location of claim's corner
+	 * @param cornerZ x location of claim's corner
+	 * @param quad Quadrant of the claim this Facet is on
+	 * @param island , is the facet attached to a claim; do we make a quad unavailable?
+	 */
+	public Facet (int cornerX, int cornerZ, Quadrant quad, boolean island) {
 		int neptX = cornerX;
 		int neptZ = cornerZ;
 		
@@ -54,21 +65,22 @@ public class Facet {
 		//    of the claim's corner
 		switch(quad){
 		case NW:
-			SE = false;
+			SE = island;
 			// N
 			neptZ++;
 			break;
 		case NE:
-			SW = false;
+			SW = island;
 			// E
 			neptX++;
 			// N
 			neptZ++;
 			break;
 		case SW:
+			NE = island;
 			break;
 		case SE:
-			NW = false;
+			NW = island;
 			// E
 			neptX++;
 			// No changes to the Facet's corner location
@@ -119,6 +131,21 @@ public class Facet {
 		NE = facet.NE && this.NE;
 		SW = facet.SW && this.SW;
 		SE = facet.SE && this.SE;
+	}
+	
+	public boolean isQuadrantAvailable(Quadrant q){
+		switch(q){
+		case NE:
+			return NE;
+		case NW:
+			return NW;
+		case SE:
+			return SE;
+		case SW:
+			return SW;
+			default:
+				throw(new Error("Quadrant Specification Error \"isQuadrant\""));
+		}
 	}
 	
 	public int getX(){
