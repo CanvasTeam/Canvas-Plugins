@@ -83,7 +83,6 @@ public class Facet {
 			NW = island;
 			// E
 			neptX++;
-			// No changes to the Facet's corner location
 			break;
 		}
 		NEptX = neptX;
@@ -97,16 +96,16 @@ public class Facet {
 			quad+=1;
 		case 0: // NORTH
 			break;
-			default:
-				return null;
+		default:
+			return null;
 		}
 		switch(NEptX-ptX){
 		case 1: // WEST
 			quad+=10;
 		case 0: // EAST
 			break;
-			default:
-				return null;
+		default:
+			return null;
 			
 		}
 		
@@ -125,12 +124,31 @@ public class Facet {
 		// return null if facet unavailable
 		return null;
 	}
-	
+
 	public void useQuadrants(Facet facet){
 		NW = facet.NW && this.NW;
 		NE = facet.NE && this.NE;
 		SW = facet.SW && this.SW;
 		SE = facet.SE && this.SE;
+	}
+	
+	public void unuseQuadrant(Quadrant q){
+		switch(q){
+		case SE:
+			SE = true;
+			break;
+		case SW:
+			SW = true;
+			break;
+		case NE:
+			NE = true;
+			break;
+		case NW:
+			NW = true;
+			break;
+		default:
+			throw(new Error("Quadrant Specification Error \"unuseQuadrant\""));
+		}
 	}
 	
 	public boolean isQuadrantAvailable(Quadrant q){
@@ -143,8 +161,8 @@ public class Facet {
 			return SE;
 		case SW:
 			return SW;
-			default:
-				throw(new Error("Quadrant Specification Error \"isQuadrant\""));
+		default:
+			throw(new Error("Quadrant Specification Error \"isQuadrant\""));
 		}
 	}
 	

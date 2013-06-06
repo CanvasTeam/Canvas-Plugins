@@ -19,6 +19,7 @@ import com.zombiehippie.bukkit.claims.CanvasClaims;
 import com.zombiehippie.bukkit.claims.Claim;
 import com.zombiehippie.bukkit.claims.events.ClaimLoadEvent;
 import com.zombiehippie.bukkit.claims.events.PlayerClaimEvent;
+import com.zombiehippie.bukkit.claims.events.PlayerUnclaimEvent;
 
 public class ClaimFacets extends JavaPlugin implements Listener {
 	// Quick lookup of FacetRegions
@@ -62,13 +63,26 @@ public class ClaimFacets extends JavaPlugin implements Listener {
 			return lookupRegion(code);
 		}
 	}
-	public Quadrant lookupFacet(int X, int Z){
+	
+	public Quadrant lookupFacetQuadrant(int X, int Z){
 		FacetRegion fr = lookupRegion(X,Z);
 		
 		for(Facet facet : fr.getFacets()){
 			Quadrant facetQuad = facet.getFacetQuadrant(X,Z);
 			if(facetQuad!=null)
 				return facetQuad;
+		}
+		
+		return null;
+	}
+	
+	public Facet lookupFacet(int X, int Z){
+		FacetRegion fr = lookupRegion(X,Z);
+		
+		for(Facet facet : fr.getFacets()){
+			Quadrant facetQuad = facet.getFacetQuadrant(X,Z);
+			if(facetQuad!=null)
+				return facet;
 		}
 		
 		return null;
@@ -105,12 +119,15 @@ public class ClaimFacets extends JavaPlugin implements Listener {
 			return;
 		registerClaimFacets(event.getClaim());
 	}
-	
+
 	@EventHandler
 	public void onClaimLoad(ClaimLoadEvent event) {
 		registerClaimFacets(event.getClaim());
 	}
-	
+	@EventHandler
+	public void onPlayerUnclaim(PlayerUnclaimEvent event) {
+		unregisterClaimFacets(event.getClaim());
+	}
 	private void registerClaimFacets(Claim theClaim) {
 				
 		int n = theClaim.getNorthBoundary();
@@ -126,13 +143,25 @@ public class ClaimFacets extends JavaPlugin implements Listener {
 		registerFacet(new Facet(e,s,Quadrant.SE));
 		
 	}
+	
+	private void unregisterClaimFacets(Claim theClaim) {
+		int n = theClaim.getNorthBoundary();
+		int s = theClaim.getSouthBoundary();
+		int w = theClaim.getWestBoundary();
+		int e = theClaim.getEastBoundary();
+
+		lookupFacet(w,n).unuseQuadrant(Quadrant.SE);
+		lookupFacet(e,n).unuseQuadrant(Quadrant.SW);
+		lookupFacet(w,s).unuseQuadrant(Quadrant.NE);
+		lookupFacet(e,s).unuseQuadrant(Quadrant.NW);
+	}
 	@EventHandler
 	public void onPlayerInteractEvent(PlayerInteractEvent event){
 		if(event.getAction()==Action.RIGHT_CLICK_BLOCK){
 			if(event.getMaterial()==Material.DIAMOND_SPADE) {
 				int x = event.getClickedBlock().getX();
 				int z = event.getClickedBlock().getZ();
-				Quadrant quad = lookupFacet(x,z);
+				Quadrant quad = lookupFacetQuadrant(x,z);
 				if(quad == null){
 					if(event.getPlayer().isOp()){
 						registerFacet(new Facet(x,z,Quadrant.NE,true));
