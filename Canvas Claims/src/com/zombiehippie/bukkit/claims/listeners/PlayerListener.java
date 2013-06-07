@@ -14,6 +14,7 @@ import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.player.PlayerBucketEmptyEvent;
 import org.bukkit.event.player.PlayerBucketFillEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
+import org.bukkit.event.vehicle.VehicleDestroyEvent;
 
 import com.zombiehippie.bukkit.claims.CanvasClaims;
 import com.zombiehippie.bukkit.claims.events.CustomBlockEvent;
@@ -21,12 +22,18 @@ import com.zombiehippie.bukkit.claims.events.CustomBlockEvent;
 public class PlayerListener implements Listener {
 	// PROHIBITTED Materials to have in hand on other people's property
 	private final List<Material> inhand_prohibits = Arrays.asList(
-			Material.FIREBALL, Material.FLINT_AND_STEEL);
+			Material.FIREBALL, Material.FLINT_AND_STEEL,
+			Material.DRAGON_EGG, Material.MONSTER_EGG, Material.MONSTER_EGGS,
+			Material.STORAGE_MINECART, Material.MINECART, Material.POWERED_MINECART,
+			Material.MINECART, Material.EXPLOSIVE_MINECART, Material.HOPPER_MINECART);
 
 	// PROHIBITTED Materials to click on other people's property
 	private final List<Material> clicked_prohibits = Arrays.asList(
 			Material.LEVER, Material.ANVIL, Material.FURNACE, Material.CHEST,
-			Material.STONE_BUTTON);
+			Material.STONE_BUTTON, Material.JUKEBOX, Material.DISPENSER,
+			Material.TRAPPED_CHEST, Material.REDSTONE_COMPARATOR_OFF,
+			Material.REDSTONE_COMPARATOR_ON,Material.BREWING_STAND,
+			Material.DIODE_BLOCK_OFF, Material.DIODE_BLOCK_ON);
 
 	@EventHandler
 	public void onPlayerInteract(PlayerInteractEvent event) {
@@ -46,43 +53,52 @@ public class PlayerListener implements Listener {
 
 		}
 	}
-	
-	@EventHandler
-	public void onCustomBlock(CustomBlockEvent event){
-		
-		
-		event.setCancelled(!event.isOwner());
-		
-	}
-	
-	@EventHandler
-    public void onBlockBreak(BlockBreakEvent event) {
-        if(!canModify(event.getPlayer(),event.getBlock())){
-        	event.setCancelled(true);
-        }
-    }
-	
-	@EventHandler
-    public void onBlockPlace(BlockPlaceEvent event) {
-        if(!canModify(event.getPlayer(),event.getBlockPlaced())){
-        	event.setCancelled(true);
-        }
-    }
 
 	@EventHandler
-    public void onPlayerBucketEmpty(PlayerBucketEmptyEvent event) {
-		// Use relative block to face clicked because that is where the liquid is poured
-        if(!canModify(event.getPlayer(),event.getBlockClicked().getRelative(event.getBlockFace()))){
-        	event.setCancelled(true);
-        }
-    }
-	
+	public void onVehicleDestroy(VehicleDestroyEvent event) {
+		if(event.getAttacker() instanceof Player)
+			if (!canModify((Player) event.getAttacker(), event.getVehicle().getLocation().getBlock())) {
+				event.setCancelled(true);
+			}
+	}
+
 	@EventHandler
-    public void onPlayerBucketFill(PlayerBucketFillEvent event) {
-        if(!canModify(event.getPlayer(),event.getBlockClicked())){
-        	event.setCancelled(true);
-        }
-    }
+	public void onCustomBlock(CustomBlockEvent event) {
+
+		event.setCancelled(!event.isOwner());
+
+	}
+
+	@EventHandler
+	public void onBlockBreak(BlockBreakEvent event) {
+		if (!canModify(event.getPlayer(), event.getBlock())) {
+			event.setCancelled(true);
+		}
+	}
+
+	@EventHandler
+	public void onBlockPlace(BlockPlaceEvent event) {
+		if (!canModify(event.getPlayer(), event.getBlockPlaced())) {
+			event.setCancelled(true);
+		}
+	}
+
+	@EventHandler
+	public void onPlayerBucketEmpty(PlayerBucketEmptyEvent event) {
+		// Use relative block to face clicked because that is where the liquid
+		// is poured
+		if (!canModify(event.getPlayer(),
+				event.getBlockClicked().getRelative(event.getBlockFace()))) {
+			event.setCancelled(true);
+		}
+	}
+
+	@EventHandler
+	public void onPlayerBucketFill(PlayerBucketFillEvent event) {
+		if (!canModify(event.getPlayer(), event.getBlockClicked())) {
+			event.setCancelled(true);
+		}
+	}
 
 	private boolean canModify(Player player, Block block) {
 		if (player.isOp())
