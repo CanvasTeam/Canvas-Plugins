@@ -1,7 +1,5 @@
 package com.zombiehippie.bukkit.claims;
 
-import java.util.LinkedList;
-
 public class Claim {
 	protected String ownerName;
     
@@ -22,24 +20,14 @@ public class Claim {
 	
 	public void assignUniqueId(){
 		// Find a unique id
-		int new_id=(int)(Math.random() * 99999);
+		int new_id = 0;
 		boolean found_id = false;
 		
-		// Eventually have a hashMap <"id", "claim">
-		LinkedList<Claim> claims = CanvasClaims.getClaims();
-		
-		// While an id has not been found
 		while(!found_id) {
-			for(Claim claimCheck : claims){
-				if(claimCheck.getId() == new_id){
-					new_id=(int)(Math.random() * 99999);
-					found_id=false;
-					break;
-				}
-			}
-			// If we iterate through without "break-ing" we found an id
-			found_id=true;
+			new_id = (int)(Math.random() * 99999);
+			found_id = !CanvasClaims.getClaimIds().contains(new_id);
 		}
+		
 		setId(new_id);
 	}
 	

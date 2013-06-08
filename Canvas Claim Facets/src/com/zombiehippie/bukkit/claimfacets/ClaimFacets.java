@@ -1,5 +1,6 @@
 package com.zombiehippie.bukkit.claimfacets;
 
+import java.util.ArrayList;
 import java.util.TreeMap;
 
 import org.bukkit.Bukkit;
@@ -17,9 +18,10 @@ import org.bukkit.plugin.java.JavaPlugin;
 import com.zombiehippie.bukkit.claimfacets.Facet.Quadrant;
 import com.zombiehippie.bukkit.claims.CanvasClaims;
 import com.zombiehippie.bukkit.claims.Claim;
-import com.zombiehippie.bukkit.claims.events.ClaimLoadEvent;
-import com.zombiehippie.bukkit.claims.events.PlayerClaimEvent;
+import com.zombiehippie.bukkit.claims.events.ClaimAddEvent;
 import com.zombiehippie.bukkit.claims.events.PlayerUnclaimEvent;
+import com.zombiehippie.bukkit.claims.visuals.ClaimVisual;
+import com.zombiehippie.bukkit.claims.visuals.ClaimVisual.ResultType;
 
 public class ClaimFacets extends JavaPlugin implements Listener {
 	// Quick lookup of FacetRegions
@@ -89,23 +91,36 @@ public class ClaimFacets extends JavaPlugin implements Listener {
 	}
 	
 	public void registerFacet(Facet facet){
-		int c = regionCode(facet.getX(),facet.getZ());
-		FacetRegion fr = lookupRegion(c);
-		fr.registerFacet(facet);
-		int x = facet.getX();
-		int z = facet.getZ();
+		int X = facet.getX();
+		int Z = facet.getZ();
+		
+		// Store regions this facet is included in
+		ArrayList<Integer> regionCodes = new ArrayList<Integer>();
+		regionCodes.add(regionCode(X,Z));
+		
+		if(!regionCodes.contains(regionCode(X-1,Z-1)))
+			regionCodes.add(regionCode(X-1,Z-1));
+		
+		if(!regionCodes.contains(regionCode(X-1,Z)))
+			regionCodes.add(regionCode(X-1,Z));
+		
+		if(!regionCodes.contains(regionCode(X,Z-1)))
+			regionCodes.add(regionCode(X,Z-1));
+		
+		for(int code : regionCodes)
+			lookupRegion(code).registerFacet(facet);
 
 		getWorld()
-		.getHighestBlockAt(x, z).getRelative(0,-1,0)
+		.getHighestBlockAt(X, Z).getRelative(0,-1,0)
 		.setType(facet.isQuadrantAvailable(Quadrant.NE)?Material.DIAMOND_BLOCK:Material.IRON_BLOCK);
 		getWorld()
-		.getHighestBlockAt(x-1,z).getRelative(0,-1,0)
+		.getHighestBlockAt(X-1,Z).getRelative(0,-1,0)
 		.setType(facet.isQuadrantAvailable(Quadrant.NW)?Material.DIAMOND_BLOCK:Material.IRON_BLOCK);
 		getWorld()
-		.getHighestBlockAt(x-1, z-1).getRelative(0,-1,0)
+		.getHighestBlockAt(X-1, Z-1).getRelative(0,-1,0)
 		.setType(facet.isQuadrantAvailable(Quadrant.SW)?Material.DIAMOND_BLOCK:Material.IRON_BLOCK);
 		getWorld()
-		.getHighestBlockAt(x, z-1).getRelative(0,-1,0)
+		.getHighestBlockAt(X, Z-1).getRelative(0,-1,0)
 		.setType(facet.isQuadrantAvailable(Quadrant.SE)?Material.DIAMOND_BLOCK:Material.IRON_BLOCK);
 	}
 	
@@ -114,26 +129,99 @@ public class ClaimFacets extends JavaPlugin implements Listener {
 	}
 	
 	@EventHandler
-	public void onClaimCreation(PlayerClaimEvent event) {
-		if(event.isCancelled())
-			return;
-		registerClaimFacets(event.getClaim());
+	public void onClaimAdd(ClaimAddEvent event) {
+		BorderedClaim newBorderedClaim = new BorderedClaim(event.getClaim());
+		event.setClaim(newBorderedClaim);
+		registerClaimFacets(newBorderedClaim);
 	}
-
-	@EventHandler
-	public void onClaimLoad(ClaimLoadEvent event) {
-		registerClaimFacets(event.getClaim());
-	}
+	
 	@EventHandler
 	public void onPlayerUnclaim(PlayerUnclaimEvent event) {
 		unregisterClaimFacets(event.getClaim());
 	}
+	
+	@EventHandler
+	// Try to join claims together
+	public void onFacetChange(FacetChangeEvent event) {
+		Facet changedFacet = event.getFacet();
+		int X = changedFacet.getX();
+		int Z = changedFacet.getZ();
+		
+		String NEOwner = null;
+		
+		
+		
+		if(!changedFacet.isQuadrantAvailable(Quadrant.NE)){
+			Claim NEClaim = CanvasClaims.getClaimAt(X+3,Z+3);
+			if(null!=NEClaim){
+				NEOwner = NEClaim.getOwnerName();
+			}
+		}
+
+		String SEOwner = null;
+		
+		if(!changedFacet.isQuadrantAvailable(Quadrant.SE)){
+			Claim SEClaim = CanvasClaims.getClaimAt(X+3,Z-3);
+			if(null!=SEClaim){
+				SEOwner = SEClaim.getOwnerName();
+			}
+		}
+
+		String SWOwner = null;
+		
+		if(!changedFacet.isQuadrantAvailable(Quadrant.SW)){
+			Claim SWClaim = CanvasClaims.getClaimAt(X-3,Z-3);
+			if(null!=SWClaim){
+				SWOwner = SWClaim.getOwnerName();
+			}
+		}
+		
+		String NWOwner = null;
+		
+		if(!changedFacet.isQuadrantAvailable(Quadrant.NW)){
+			Claim NWClaim = CanvasClaims.getClaimAt(X-3,Z+3);
+			if(null!=NWClaim){
+				NWOwner = NWClaim.getOwnerName();
+			}
+		}
+
+		if(NWOwner != null && NWOwner.equals(NEOwner)){
+			CanvasClaims.getClaimAt(X-3,Z+3).setEastBoundary(
+					CanvasClaims.getClaimAt(X-3,Z+3).getEastBoundary()+1);
+			CanvasClaims.getClaimAt(X+3,Z+3).setWestBoundary(
+					CanvasClaims.getClaimAt(X+3,Z+3).getWestBoundary()-1);
+			System.out.println("NW + NE");
+		}
+		if(NEOwner != null && NEOwner.equals(SEOwner)){
+			CanvasClaims.getClaimAt(X+3,Z+3).setSouthBoundary(
+					CanvasClaims.getClaimAt(X+3,Z+3).getSouthBoundary()-1);
+			CanvasClaims.getClaimAt(X+3,Z-3).setNorthBoundary(
+					CanvasClaims.getClaimAt(X+3,Z-3).getNorthBoundary()+1);
+			System.out.println("NE + SE");
+		}
+		if(SEOwner != null && SEOwner.equals(SWOwner)){
+			CanvasClaims.getClaimAt(X+3,Z-3).setWestBoundary(
+					CanvasClaims.getClaimAt(X+3,Z-3).getWestBoundary()-1);
+			CanvasClaims.getClaimAt(X-3,Z-3).setEastBoundary(
+					CanvasClaims.getClaimAt(X-3,Z-3).getEastBoundary()+1);
+			System.out.println("SE + SW");
+		}
+		if(SWOwner != null && SWOwner.equals(NWOwner)){
+			((BorderedClaim) CanvasClaims.getClaimAt(X-3,Z-3)).setNorthBorder(1);
+			((BorderedClaim) CanvasClaims.getClaimAt(X-3,Z+3)).setSouthBorder(1);
+			System.out.println("SW + NW");
+		}
+		
+	}
+	
 	private void registerClaimFacets(Claim theClaim) {
 				
-		int n = theClaim.getNorthBoundary();
-		int s = theClaim.getSouthBoundary();
-		int w = theClaim.getWestBoundary();
-		int e = theClaim.getEastBoundary();
+		// Create the Facets as to spread the boundaries out
+		
+		int n = theClaim.getNorthBoundary()+1;
+		int s = theClaim.getSouthBoundary()-1;
+		int w = theClaim.getWestBoundary()-1;
+		int e = theClaim.getEastBoundary()+1;
 
 		System.out.println("N:S:W:E;"+n+":"+s+":"+w+":"+e);
 		
@@ -145,10 +233,10 @@ public class ClaimFacets extends JavaPlugin implements Listener {
 	}
 	
 	private void unregisterClaimFacets(Claim theClaim) {
-		int n = theClaim.getNorthBoundary();
-		int s = theClaim.getSouthBoundary();
-		int w = theClaim.getWestBoundary();
-		int e = theClaim.getEastBoundary();
+		int n = theClaim.getNorthBoundary()+1;
+		int s = theClaim.getSouthBoundary()-1;
+		int w = theClaim.getWestBoundary()-1;
+		int e = theClaim.getEastBoundary()+1;
 
 		lookupFacet(w,n).unuseQuadrant(Quadrant.SE);
 		lookupFacet(e,n).unuseQuadrant(Quadrant.SW);
@@ -167,7 +255,7 @@ public class ClaimFacets extends JavaPlugin implements Listener {
 						registerFacet(new Facet(x,z,Quadrant.NE,true));
 						event.getPlayer().sendMessage(ChatColor.GREEN + "New Facet established!");
 					} else {
-						event.getPlayer().sendMessage("Click a facet to make a claim!");
+						event.getPlayer().sendMessage("Click a Diamond Block to make a claim!");
 					}
 					return;
 				}
@@ -176,32 +264,45 @@ public class ClaimFacets extends JavaPlugin implements Listener {
 					int z2 = z;
 					switch(quad){
 					case NE:
-						x2+=7;
-						z2+=7;
+						x2+=10;
+						z2+=10;
+						x+=1;
+						z+=1;
 						break;
 					case NW:
-						x2-=7;
-						z2+=7;
+						x2-=10;
+						z2+=10;
+						x-=1;
+						z+=1;
 						break;
 					case SE:
-						x2+=7;
-						z2-=7;
+						x2+=10;
+						z2-=10;
+						x+=1;
+						z-=1;
 						break;
 					case SW:
-						x2-=7;
-						z2-=7;
+						x2-=10;
+						z2-=10;
+						x-=1;
+						z-=1;
 						break;
 					}
 					
 					CanvasClaims.instance.createClaim(event.getPlayer()
-							, event.getClickedBlock().getLocation()
+							, event.getClickedBlock().getWorld().getHighestBlockAt(x, z).getLocation()
 							, new Location(event.getPlayer().getWorld(),x2,0,z2));
 				}
 				String msg = "Facet: ";
 				msg+= quad!=null?quad.toString():"NULL";
 				event.getPlayer().sendMessage(msg);
 			} else if(event.getMaterial()==Material.BOOK){
-				
+				Claim theClaimClicked = CanvasClaims.getClaimAt(event.getClickedBlock());
+				if(theClaimClicked!=null) {
+					new ClaimVisual(event.getPlayer(),theClaimClicked,ResultType.INFO);
+				} else {
+					ClaimVisual.resetPlayersVisuals(event.getPlayer().getName());
+				}
 			}
 		}
 	}

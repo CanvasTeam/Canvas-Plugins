@@ -5,11 +5,11 @@ import org.bukkit.event.HandlerList;
 
 import com.zombiehippie.bukkit.claims.Claim;
 
-public class ClaimLoadEvent extends Event {
+public class ClaimAddEvent extends Event {
     private static final HandlerList handlers = new HandlerList();
     private Claim claim;
     
-	public ClaimLoadEvent(Claim theClaim) {
+	public ClaimAddEvent(Claim theClaim) {
 		this.claim = theClaim;
 	}
 	
@@ -21,8 +21,19 @@ public class ClaimLoadEvent extends Event {
     public static HandlerList getHandlerList() {
         return handlers;
     }
-
+    /**
+     * Get claim that will be added to the claim manager
+     * @return theClaim
+     */
 	public Claim getClaim() {
 		return claim;
+	}
+	
+	/**
+	 * Set's the claim to be added to the claim manager
+	 * @param newClaim
+	 */
+	public void setClaim(Claim newClaim) {
+		this.claim = newClaim;
 	}
 }

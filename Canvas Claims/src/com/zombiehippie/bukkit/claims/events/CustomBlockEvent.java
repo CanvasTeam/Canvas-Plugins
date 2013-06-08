@@ -15,7 +15,7 @@ public class CustomBlockEvent extends Event implements Cancellable {
     private final String playerName;
     private boolean cancelled = false;
 	public CustomBlockEvent(String thePlayerName, Block theBlock) {
-		Claim theClaim = CanvasClaims.instance.getClaimAt(theBlock);
+		Claim theClaim = CanvasClaims.getClaimAt(theBlock);
 		
 		// isClaimed If claim isn't null
 		claimed=(theClaim != null);

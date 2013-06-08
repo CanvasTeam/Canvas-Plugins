@@ -59,7 +59,7 @@ public class WorldListener implements Listener {
 	}
 
 	private String getClaimOwnerAt(Block b) {
-		Claim theClaim = CanvasClaims.instance.getClaimAt(b);
+		Claim theClaim = CanvasClaims.getClaimAt(b);
 		if (theClaim == null) {
 			return "";
 		} else {

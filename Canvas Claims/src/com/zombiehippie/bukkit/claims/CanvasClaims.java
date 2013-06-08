@@ -2,9 +2,11 @@ package com.zombiehippie.bukkit.claims;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Iterator;
+import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Set;
+import java.util.TreeMap;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -18,7 +20,7 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.zombiehippie.bukkit.claims.commands.AbandonCommand;
-import com.zombiehippie.bukkit.claims.events.ClaimLoadEvent;
+import com.zombiehippie.bukkit.claims.events.ClaimAddEvent;
 import com.zombiehippie.bukkit.claims.events.PlayerClaimEvent;
 import com.zombiehippie.bukkit.claims.listeners.PlayerListener;
 import com.zombiehippie.bukkit.claims.listeners.WorldListener;
@@ -27,11 +29,11 @@ import com.zombiehippie.bukkit.claims.visuals.ClaimVisual.ResultType;
 
 public class CanvasClaims extends JavaPlugin {
 	public static CanvasClaims instance;
-	private static LinkedList<Claim> claims = new LinkedList<Claim>();
+	private static TreeMap<Integer,Claim> idToClaim = new TreeMap<Integer,Claim>();
 
 	@Override
 	public void onDisable() {
-		saveAll();
+		// saveAll();
 		ClaimVisual.resetAllVisuals();
 	}
 
@@ -58,7 +60,7 @@ public class CanvasClaims extends JavaPlugin {
 		// Will eventually use the actual claim ids
 		ConfigurationSection csect = allClaims.createSection("claims");
 		int id = 0;
-		for (Claim next : claims) {
+		for (Claim next : idToClaim.values()) {
 			id++;
 			ConfigurationSection sect = csect.createSection(""+id);
 			sect.set("id", next.getId());
@@ -82,8 +84,6 @@ public class CanvasClaims extends JavaPlugin {
 				.loadConfiguration(allClaimsConfigFile);
 		
 		String pre = "claims.";
-		
-		PluginManager pm = Bukkit.getPluginManager();
 
 		for (int id = 1; allClaims.contains(pre + id); id++) {
 			Claim next = new Claim();
@@ -94,11 +94,9 @@ public class CanvasClaims extends JavaPlugin {
 			next.setSouthBoundary((int) allClaims.get(pre + id + ".s"));
 			next.setWestBoundary((int) allClaims.get(pre + id + ".w"));
 			
-			pm.callEvent(new ClaimLoadEvent(next));
-			
-			claims.add(next);
+			addClaim(next);
 		}
-		System.out.println("[Canvas Claims] " + claims.size()
+		System.out.println("[Canvas Claims] " + idToClaim.size()
 				+ " claims loaded from file.");
 	}
 
@@ -165,7 +163,7 @@ public class CanvasClaims extends JavaPlugin {
 	 * @param block the block
 	 * @return claim at this location, returns null if no claim is present
 	 */
-	public Claim getClaimAt(Block block) {
+	public static Claim getClaimAt(Block block) {
 		return getClaimAt(block.getX(), block.getZ());
 	}
 	/**
@@ -175,8 +173,8 @@ public class CanvasClaims extends JavaPlugin {
 	 * @param Z
 	 * @return claim at this location, returns null if no claim is present
 	 */
-	public Claim getClaimAt(int X, int Z) {
-		for(Claim checkClaim : claims){
+	public static Claim getClaimAt(int X, int Z) {
+		for(Claim checkClaim : idToClaim.values()){
 			if (checkClaim.isInside(X, Z)) {
 				return checkClaim;
 			}
@@ -192,16 +190,15 @@ public class CanvasClaims extends JavaPlugin {
 	 * @return claims owned by user
 	 */
 	public List<Claim> getUsersClaims(String theUserName) {
-		Iterator<Claim> it = claims.iterator();
-		LinkedList<Claim> claims = new LinkedList<Claim>();
-		while (it.hasNext()) {
-			Claim next = it.next();
-			if (next.ownsClaim(theUserName)) {
-				claims.add(next);
+		LinkedList<Claim> usersClaims = new LinkedList<Claim>();
+		
+		for(Claim claim : idToClaim.values()) {
+			if (claim.ownsClaim(theUserName)) {
+				usersClaims.add(claim);
 			}
 		}
 
-		return claims;
+		return usersClaims;
 	}
 
 	/**
@@ -211,30 +208,34 @@ public class CanvasClaims extends JavaPlugin {
 	 * @return returns null if no claims intersect
 	 */
 	public List<Claim> getClaimsIntersecting(Claim new_claim) {
-		Iterator<Claim> it = claims.iterator();
 		LinkedList<Claim> intersectingClaims = new LinkedList<Claim>();
-		while (it.hasNext()) {
-			Claim next = it.next();
-			// if the next claim intersects the area, add it to the intersection
-			// list
-			if (next.isIntersecting(new_claim)) {
-				intersectingClaims.add(next);
+		
+		for(Claim claim : idToClaim.values()) {
+			if (claim.isIntersecting(new_claim)) {
+				intersectingClaims.add(claim);
 			}
 		}
 		return intersectingClaims;
 	}
 
 	public void addClaim(Claim theClaim) {
-		claims.add(theClaim);
+		ClaimAddEvent evt = new ClaimAddEvent(theClaim);
+
+		Bukkit.getPluginManager().callEvent(evt);
+		
+		idToClaim.put(evt.getClaim().getId(), evt.getClaim());
+		
 		saveAll();
 	}
 
-	public void removeClaim(Claim theClaim) {
-		claims.remove(theClaim);
-
+	public void removeClaim(int theClaimId) {
+		idToClaim.remove(theClaimId);
 	}
 
-	public static LinkedList<Claim> getClaims() {
-		return claims;
+	public static Collection<Claim> getClaims() {
+		return idToClaim.values();
+	}
+	public static Set<Integer> getClaimIds() {
+		return idToClaim.keySet();
 	}
 }

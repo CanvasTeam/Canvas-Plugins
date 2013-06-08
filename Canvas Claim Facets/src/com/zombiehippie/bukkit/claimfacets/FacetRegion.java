@@ -2,6 +2,8 @@ package com.zombiehippie.bukkit.claimfacets;
 
 import java.util.LinkedList;
 
+import org.bukkit.Bukkit;
+
 import com.zombiehippie.bukkit.claimfacets.Facet.Quadrant;
 
 public class FacetRegion {
@@ -38,6 +40,7 @@ public class FacetRegion {
 		if(looked != null) {
 			this.facets.remove(looked);
 			facet.useQuadrants(looked);
+			Bukkit.getPluginManager().callEvent(new FacetChangeEvent(facet));
 		}
 		this.facets.add(facet);
 		return facet;

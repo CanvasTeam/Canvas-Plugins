@@ -6,6 +6,7 @@ description: |
             existing claims.
 author: ZombieHippie
 authors: [CornyZombie, zerdang]
+depend: [CanvasClaims]
 database: false
 
 main: com.zombiehippie.bukkit.claimfacets.ClaimFacets
