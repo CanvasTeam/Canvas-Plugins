@@ -1,7 +1,6 @@
 package com.zombiehippie.bukkit.claims.visuals;
 
 import java.util.HashMap;
-import java.util.Iterator;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -121,10 +120,8 @@ public class ClaimVisual extends Visual{
 		if(activeVisuals.isEmpty()){
 			return;
 		}
-		Iterator<String> it = activeVisuals.keySet().iterator();
-		while(it.hasNext()){
-			resetPlayersVisuals(it.next());
-		}
+		for(String playerWithActiveVisualsName : activeVisuals.keySet())
+			resetPlayersVisuals(playerWithActiveVisualsName);
 		activeVisuals.clear();
 	}
 }

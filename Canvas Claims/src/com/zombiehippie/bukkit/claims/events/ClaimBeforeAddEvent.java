@@ -5,11 +5,11 @@ import org.bukkit.event.HandlerList;
 
 import com.zombiehippie.bukkit.claims.Claim;
 
-public class ClaimAddEvent extends Event {
+public class ClaimBeforeAddEvent extends Event {
     private static final HandlerList handlers = new HandlerList();
     private Claim claim;
     
-	public ClaimAddEvent(Claim theClaim) {
+	public ClaimBeforeAddEvent(Claim theClaim) {
 		this.claim = theClaim;
 	}
 	

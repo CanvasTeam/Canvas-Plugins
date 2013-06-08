@@ -36,7 +36,7 @@ public class BorderedClaim extends Claim{
 	}
 	@Override
 	public int getSouthBoundary(){
-		return this.southBoundary+SouthBorder;
+		return this.southBoundary-SouthBorder;
 	}
 	@Override
 	public int getEastBoundary(){
@@ -44,7 +44,7 @@ public class BorderedClaim extends Claim{
 	}
 	@Override
 	public int getWestBoundary(){
-		return this.westBoundary+WestBorder;
+		return this.westBoundary-WestBorder;
 	}
 	
 	public int getNorthBorder() {

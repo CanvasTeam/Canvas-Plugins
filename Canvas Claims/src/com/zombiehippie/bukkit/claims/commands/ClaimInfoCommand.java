@@ -22,7 +22,7 @@ public class ClaimInfoCommand implements CommandExecutor {
 		Claim theClaim = CanvasClaims.getClaimAt(thePlayer.getLocation().getBlock());
 		
 		if(theClaim != null && theClaim.ownsClaim(thePlayer.getName())){
-			CanvasClaims.instance.removeClaim(theClaim.getId());
+			CanvasClaims.removeClaim(theClaim.getId());
 			ClaimVisual.resetPlayersVisuals(thePlayer.getName());
 		}
 		return true;

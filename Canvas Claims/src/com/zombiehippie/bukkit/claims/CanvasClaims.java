@@ -20,7 +20,8 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.zombiehippie.bukkit.claims.commands.AbandonCommand;
-import com.zombiehippie.bukkit.claims.events.ClaimAddEvent;
+import com.zombiehippie.bukkit.claims.events.ClaimAfterAddEvent;
+import com.zombiehippie.bukkit.claims.events.ClaimBeforeAddEvent;
 import com.zombiehippie.bukkit.claims.events.PlayerClaimEvent;
 import com.zombiehippie.bukkit.claims.listeners.PlayerListener;
 import com.zombiehippie.bukkit.claims.listeners.WorldListener;
@@ -219,17 +220,23 @@ public class CanvasClaims extends JavaPlugin {
 	}
 
 	public void addClaim(Claim theClaim) {
-		ClaimAddEvent evt = new ClaimAddEvent(theClaim);
+		ClaimBeforeAddEvent before_evt = new ClaimBeforeAddEvent(theClaim);
 
-		Bukkit.getPluginManager().callEvent(evt);
+		Bukkit.getPluginManager().callEvent(before_evt);
 		
-		idToClaim.put(evt.getClaim().getId(), evt.getClaim());
+		idToClaim.put(before_evt.getClaim().getId(), before_evt.getClaim());
 		
+		Bukkit.getPluginManager().callEvent(new ClaimAfterAddEvent(before_evt.getClaim().getId()));
+
 		saveAll();
 	}
 
-	public void removeClaim(int theClaimId) {
+	public static void removeClaim(int theClaimId) {
 		idToClaim.remove(theClaimId);
+	}
+	
+	public static Claim getClaim(int theClaimId) {
+		return idToClaim.get(theClaimId);
 	}
 
 	public static Collection<Claim> getClaims() {
