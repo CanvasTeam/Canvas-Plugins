@@ -31,7 +31,8 @@ public class CanvasPainter extends JavaPlugin implements Listener{
 	
 	@EventHandler
 	public void onPlayerInteract(PlayerInteractEvent event){
-		if(event.getItem().getType() == Material.STICK){
+		if(event.getItem() != null && event.getItem().getType() == Material.STICK){
+			
 			String player_name = event.getPlayer().getName();
 			if(brushes.containsKey(player_name)){
 				brushes.get(player_name).interact(event);
