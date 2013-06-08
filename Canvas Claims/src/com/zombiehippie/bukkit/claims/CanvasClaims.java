@@ -160,19 +160,25 @@ public class CanvasClaims extends JavaPlugin {
 	}
 
 	/**
+	 * Get a claim at specific block
+	 * 
+	 * @param block the block
+	 * @return claim at this location, returns null if no claim is present
+	 */
+	public Claim getClaimAt(Block block) {
+		return getClaimAt(block.getX(), block.getZ());
+	}
+	/**
 	 * Get a claim at specific X and Z coords
 	 * 
 	 * @param X
 	 * @param Z
 	 * @return claim at this location, returns null if no claim is present
 	 */
-	public Claim getClaimAt(Block block) {
-		Iterator<Claim> it = claims.iterator();
-		while (it.hasNext()) {
-			// iterate through all claims
-			Claim next = it.next();
-			if (next.isInside(block.getX(), block.getZ())) {
-				return next;
+	public Claim getClaimAt(int X, int Z) {
+		for(Claim checkClaim : claims){
+			if (checkClaim.isInside(X, Z)) {
+				return checkClaim;
 			}
 		}
 		// Did not find a claim

@@ -2,15 +2,15 @@ package com.zombiehippie.bukkit.claims;
 
 import java.util.LinkedList;
 
-public class Claim { 
-	private String ownerName;
+public class Claim {
+	protected String ownerName;
     
-	private int id = 0;
+	protected int id = 0;
 	
-	private int northBoundary;
-	private int southBoundary;
-	private int eastBoundary;
-	private int westBoundary;
+	protected int northBoundary;
+	protected int southBoundary;
+	protected int eastBoundary;
+	protected int westBoundary;
 
 	
 	/**
@@ -112,10 +112,10 @@ public class Claim {
 	 * @param z2 a z-boundary
 	 */
 	private void setBoundaries(int x1, int z1, int x2, int z2){
-		northBoundary = z1>z2?z1:z2;
-		southBoundary = z1<z2?z1:z2;
-		eastBoundary = x1>x2?x1:x2;
-		westBoundary = x1<x2?x1:x2;
+		setNorthBoundary(z1>z2?z1:z2);
+		setSouthBoundary(z1<z2?z1:z2);
+		setEastBoundary(x1>x2?x1:x2);
+		setWestBoundary(x1<x2?x1:x2);
 	}
 	
 	/**
@@ -125,10 +125,10 @@ public class Claim {
 	 */
 	public boolean isIntersecting(Claim area){
         // intersections based off of Rectangle class intersections
-        return ((area.eastBoundary > this.westBoundary) &&
-                (area.northBoundary > this.southBoundary) &&
-                (this.eastBoundary > area.westBoundary) &&
-                (this.northBoundary > area.southBoundary));
+        return ((area.getEastBoundary() > this.getWestBoundary()) &&
+                (area.getNorthBoundary() > this.getSouthBoundary()) &&
+                (this.getEastBoundary() > area.getWestBoundary()) &&
+                (this.getNorthBoundary() > area.getSouthBoundary()));
 	}
 	
 	/**
@@ -139,10 +139,10 @@ public class Claim {
 	 */
 	public boolean isInside(int X, int Z){
 		// inside checks
-		return ((X <= this.eastBoundary) &&
-				(X >= this.westBoundary) &&
-				(Z <= this.northBoundary) &&
-				(Z >= this.southBoundary));
+		return ((X <= this.getEastBoundary()) &&
+				(X >= this.getWestBoundary()) &&
+				(Z <= this.getNorthBoundary()) &&
+				(Z >= this.getSouthBoundary()));
 	}
 	
 	public boolean ownsClaim(String UserName){
@@ -154,7 +154,7 @@ public class Claim {
 	 * @return the width
 	 */
 	public int getWidth(){
-		return this.eastBoundary - this.westBoundary;
+		return this.getEastBoundary() - this.getWestBoundary();
 	}
 	
 	/**
@@ -162,6 +162,6 @@ public class Claim {
 	 * @return the height
 	 */
 	public int getHeight(){
-		return this.northBoundary - this.southBoundary;
+		return this.getNorthBoundary() - this.getSouthBoundary();
 	}
 }
