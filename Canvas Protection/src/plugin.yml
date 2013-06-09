@@ -1,0 +1,7 @@
+name: Canvas Protection
+version: 0.1
+main: com.zombiehippie.bukkit.protection.CanvasProtection
+
+commands:
+  AbandonCanvas:
+     aliases: [ap]
