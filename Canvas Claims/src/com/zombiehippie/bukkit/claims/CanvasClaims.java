@@ -65,6 +65,7 @@ public class CanvasClaims extends JavaPlugin {
 			id++;
 			ConfigurationSection sect = csect.createSection(""+id);
 			sect.set("id", next.getId());
+			sect.set("worldname", next.getWorldName());
 			sect.set("own", next.getOwnerName());
 			sect.set("n", next.getNorthBoundary());
 			sect.set("e", next.getEastBoundary());
@@ -87,7 +88,7 @@ public class CanvasClaims extends JavaPlugin {
 		String pre = "claims.";
 
 		for (int id = 1; allClaims.contains(pre + id); id++) {
-			Claim next = new Claim();
+			Claim next = new Claim((String) allClaims.get(pre + id + ".worldname"));
 			next.setId((int) allClaims.get(pre + id + ".id"));
 			next.setOwnerName((String) allClaims.get(pre + id + ".own"));
 			next.setNorthBoundary((int) allClaims.get(pre + id + ".n"));
@@ -112,7 +113,7 @@ public class CanvasClaims extends JavaPlugin {
 	 *            Second point selected
 	 */
 	public void createClaim(Player User, Location first, Location second) {
-		Claim new_claim = new Claim();
+		Claim new_claim = new Claim(first.getWorld().getName());
 
 		// Setup the new claim with boundaries
 		new_claim.setupClaim(User.getName(), (int) first.getX(),

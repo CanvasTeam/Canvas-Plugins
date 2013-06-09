@@ -13,18 +13,18 @@ public class Visual {
 		claims = _areas;
 	}
 
-	public void own(Player player){
-		visual(player,Material.GLOWSTONE.getId(), Material.GOLD_BLOCK.getId());
+	public void own(Player sendToPlayer){
+		visual(sendToPlayer,Material.GLOWSTONE.getId(), Material.GOLD_BLOCK.getId());
 	}
-	public void error(Player player){
-		visual(player,Material.NETHER_BRICK.getId(), Material.LAVA.getId());
+	public void error(Player sendToPlayer){
+		visual(sendToPlayer,Material.NETHER_BRICK.getId(), Material.LAVA.getId());
 	}
-	public void info(Player player){
-		visual(player,Material.DIAMOND_BLOCK.getId(), Material.IRON_BLOCK.getId());
+	public void info(Player sendToPlayer){
+		visual(sendToPlayer,Material.DIAMOND_BLOCK.getId(), Material.IRON_BLOCK.getId());
 	}
-	public void reset(Player player){
+	public void reset(Player sendToPlayer){
 		// Setting materials to -1 will trigger reset in visual
-		visual(player,-1,-1);
+		visual(sendToPlayer,-1,-1);
 	}
 	public void visual(Player player, int corner, int dots){
 		for(int index=0;index<claims.length;index++){

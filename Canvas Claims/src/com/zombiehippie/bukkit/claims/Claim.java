@@ -2,6 +2,7 @@ package com.zombiehippie.bukkit.claims;
 
 public class Claim {
 	protected String ownerName;
+	protected final String worldName;
     
 	protected int id = 0;
 	
@@ -14,10 +15,14 @@ public class Claim {
 	/**
 	 * Construct a Claim
 	 */
-	public Claim(){
-		// No construction needed
+	public Claim(String theWorldName){
+		worldName = theWorldName;
 	}
 	
+	public String getWorldName() {
+		return worldName;
+	}
+
 	public void assignUniqueId(){
 		// Find a unique id
 		int new_id = 0;

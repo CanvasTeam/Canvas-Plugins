@@ -9,6 +9,7 @@ public class BorderedClaim extends Claim{
 	private int WestBorder = 0;
 	
 	public BorderedClaim(Claim before){
+		super(before.getWorldName());
 		this.eastBoundary = before.getEastBoundary();
 		this.westBoundary = before.getWestBoundary();
 		this.northBoundary = before.getNorthBoundary();
