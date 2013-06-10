@@ -1,4 +1,4 @@
-package com.zombiehippie.bukkit.claims.visuals;
+package com.zombiehippie.bukkit.protection.visuals;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
