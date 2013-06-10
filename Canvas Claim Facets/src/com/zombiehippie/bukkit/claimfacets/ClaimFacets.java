@@ -18,13 +18,13 @@ import org.bukkit.plugin.java.JavaPlugin;
 import com.zombiehippie.bukkit.claimfacets.Facet.Quadrant;
 import com.zombiehippie.bukkit.claims.CanvasClaims;
 import com.zombiehippie.bukkit.claims.Claim;
-import com.zombiehippie.bukkit.claims.visuals.ClaimVisual;
-import com.zombiehippie.bukkit.claims.visuals.ClaimVisual.ResultType;
+import com.zombiehippie.bukkit.claims.visuals.VisualType;
+import com.zombiehippie.bukkit.claims.visuals.Visuallization;
 
 public class ClaimFacets extends JavaPlugin implements Listener {
 	// Quick lookup of FacetRegions
 	private static TreeMap<Integer, FacetRegion> lookupRegion = new TreeMap<Integer, FacetRegion>();
-	public static final int BORDERS = 1; // Modifiable
+	public static final int BORDERS = 3; // Modifiable
 	public static final int SIDE = 9; // Modifiable
 
 	@Override
@@ -117,25 +117,25 @@ public class ClaimFacets extends JavaPlugin implements Listener {
 				.getRelative(0, -1, 0)
 				.setType(
 						facet.isQuadrantAvailable(Quadrant.NE) ? Material.DIAMOND_BLOCK
-								: Material.IRON_BLOCK);
+								: Material.GLOWSTONE);
 		getWorld()
 				.getHighestBlockAt(X - 1, Z)
 				.getRelative(0, -1, 0)
 				.setType(
 						facet.isQuadrantAvailable(Quadrant.NW) ? Material.DIAMOND_BLOCK
-								: Material.IRON_BLOCK);
+								: Material.GLOWSTONE);
 		getWorld()
 				.getHighestBlockAt(X - 1, Z - 1)
 				.getRelative(0, -1, 0)
 				.setType(
 						facet.isQuadrantAvailable(Quadrant.SW) ? Material.DIAMOND_BLOCK
-								: Material.IRON_BLOCK);
+								: Material.GLOWSTONE);
 		getWorld()
 				.getHighestBlockAt(X, Z - 1)
 				.getRelative(0, -1, 0)
 				.setType(
 						facet.isQuadrantAvailable(Quadrant.SE) ? Material.DIAMOND_BLOCK
-								: Material.IRON_BLOCK);
+								: Material.GLOWSTONE);
 	}
 
 	public static World getWorld() {
@@ -236,11 +236,11 @@ public class ClaimFacets extends JavaPlugin implements Listener {
 				Claim theClaimClicked = CanvasClaims.getClaimAt(event
 						.getClickedBlock());
 				if (theClaimClicked != null) {
-					new ClaimVisual(event.getPlayer(), theClaimClicked,
-							ResultType.INFO);
+					boolean selfOwned = theClaimClicked.ownsClaim(event.getPlayer().getName());
+					Visuallization.applyClaimVisualsToPlayer(event.getPlayer(), new Claim[]{theClaimClicked},
+							selfOwned?VisualType.INFORMSELFOWNED:VisualType.INFORMELSEOWNED);
 				} else {
-					ClaimVisual
-							.resetPlayersVisuals(event.getPlayer().getName());
+					Visuallization.resetPlayerVisuals(event.getPlayer().getName());
 				}
 			}
 		}

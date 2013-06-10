@@ -11,8 +11,11 @@ import com.zombiehippie.bukkit.claims.events.ClaimAfterAddEvent;
 import com.zombiehippie.bukkit.claims.events.ClaimBeforeAddEvent;
 
 public class FacetListeners implements Listener{
-	private static int BORDERS = ClaimFacets.BORDERS;
+	private static int BORDERS;
 	
+	public FacetListeners(){
+		BORDERS = ClaimFacets.BORDERS;
+	}
 	
 	@EventHandler(priority=EventPriority.HIGHEST)
 	public void onClaimBeforeAdd(ClaimBeforeAddEvent event) {

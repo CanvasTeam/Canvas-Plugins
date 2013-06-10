@@ -11,7 +11,7 @@ public enum VisualType {
 	INFORMSELFOWNED(Material.GOLD_BLOCK,
 			ChatColor.BLUE+"You own this claim!"),
 	INFORMELSEOWNED(Material.IRON_BLOCK,
-			ChatColor.AQUA+"$else "+ChatColor.BLUE+"owns this land.");
+			ChatColor.AQUA+"$ownerName "+ChatColor.BLUE+"owns this land.");
 	
 	
 	

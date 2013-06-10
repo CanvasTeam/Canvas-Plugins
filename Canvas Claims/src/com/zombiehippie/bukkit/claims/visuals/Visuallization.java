@@ -18,7 +18,7 @@ public class Visuallization {
 	private final VisualType visualType;
 
 	public Visuallization(Player thePlayerSeeing, VisualType theType,
-			LinkedList<VisualLocation> theBlocks, String theWorldName) {
+			LinkedList<VisualLocation> theBlocks, String theWorldName, String ownerName) {
 		player = thePlayerSeeing;
 		worldName = theWorldName;
 		blocks = theBlocks;
@@ -28,13 +28,15 @@ public class Visuallization {
 		playersWithVisuals.put(thePlayerSeeing.getName(), this);
 
 		sendVisuals();
+		
+		thePlayerSeeing.sendMessage(theType.getMessageToPlayer().replaceFirst("$ownerName", ownerName));
 	}
 
 	public static void applyClaimVisualsToPlayer(Player thePlayer,
 			Claim[] theClaims, VisualType theTypeOfVisual) {
 		
 		new Visuallization(thePlayer, theTypeOfVisual, getOutlines(theClaims),
-				theClaims[0].getWorldName());
+				theClaims[0].getWorldName(), theClaims[0].getOwnerName());
 
 	}
 

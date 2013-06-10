@@ -9,7 +9,6 @@ import java.util.Set;
 import java.util.TreeMap;
 
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.block.Block;
 import org.bukkit.configuration.ConfigurationSection;
@@ -24,9 +23,10 @@ import com.zombiehippie.bukkit.claims.events.ClaimAfterAddEvent;
 import com.zombiehippie.bukkit.claims.events.ClaimBeforeAddEvent;
 import com.zombiehippie.bukkit.claims.events.PlayerClaimEvent;
 import com.zombiehippie.bukkit.claims.listeners.PlayerListener;
+import com.zombiehippie.bukkit.claims.listeners.ServerListener;
 import com.zombiehippie.bukkit.claims.listeners.WorldListener;
-import com.zombiehippie.bukkit.claims.visuals.ClaimVisual;
-import com.zombiehippie.bukkit.claims.visuals.ClaimVisual.ResultType;
+import com.zombiehippie.bukkit.claims.visuals.VisualType;
+import com.zombiehippie.bukkit.claims.visuals.Visuallization;
 
 public class CanvasClaims extends JavaPlugin {
 	public static CanvasClaims instance;
@@ -34,8 +34,8 @@ public class CanvasClaims extends JavaPlugin {
 
 	@Override
 	public void onDisable() {
-		// saveAll();
-		ClaimVisual.resetAllVisuals();
+		for(Player thePlayer : Bukkit.getOnlinePlayers())
+			Visuallization.resetPlayerVisuals(thePlayer.getName());
 	}
 
 	@Override
@@ -44,12 +44,10 @@ public class CanvasClaims extends JavaPlugin {
 		PluginManager pm = getServer().getPluginManager();
 		pm.registerEvents(new WorldListener(), this);
 		pm.registerEvents(new PlayerListener(), this);
+		pm.registerEvents(new ServerListener(), this);
 
 		// Register commands
 		getCommand("AbandonClaim").setExecutor(new AbandonCommand());
-
-		// Load
-		loadAll();
 
 		instance = this;
 	}
@@ -79,7 +77,7 @@ public class CanvasClaims extends JavaPlugin {
 		}
 	}
 
-	private void loadAll() {
+	public void loadAll() {
 		File allClaimsConfigFile = new File(getDataFolder() + File.separator
 				+ "claims", "claims.yml");
 		FileConfiguration allClaims = YamlConfiguration
@@ -105,51 +103,43 @@ public class CanvasClaims extends JavaPlugin {
 	/**
 	 * Attempts to create the claim, also sends the results to player
 	 * 
-	 * @param User
+	 * @param thePlayer
 	 *            Creator of claim
 	 * @param first
 	 *            First point selected
 	 * @param second
 	 *            Second point selected
 	 */
-	public void createClaim(Player User, Location first, Location second) {
+	public void createClaim(Player thePlayer, Location first, Location second) {
 		Claim new_claim = new Claim(first.getWorld().getName());
 
 		// Setup the new claim with boundaries
-		new_claim.setupClaim(User.getName(), (int) first.getX(),
+		new_claim.setupClaim(thePlayer.getName(), (int) first.getX(),
 				(int) first.getZ(), (int) second.getX(), (int) second.getZ());
 
-		// Check that the claim meets minimum size requirements
-		if (new_claim.getHeight() < 7 || new_claim.getWidth() < 7) {
-			User.sendMessage(ChatColor.RED
-					+ "Your claim needs to be at least 7x7 blocks!");
-			new ClaimVisual(User, new_claim, ResultType.TOOSMALL);
-			return;
-		}
 
-		// Look for intersecting claims
-		List<Claim> intersecting = getClaimsIntersecting(new_claim);
-		if (intersecting == null || intersecting.size() == 0) {
-			// Found no intersecting claims
-			// Call event
-			PlayerClaimEvent claimevt = new PlayerClaimEvent(User.getName(),
+		List<Claim> intersectingClaims = getClaimsIntersecting(new_claim);
+		if (intersectingClaims == null || intersectingClaims.size() == 0) {
+
+			PlayerClaimEvent claimevt = new PlayerClaimEvent(thePlayer.getName(),
 					new_claim);
 
 			this.getServer().getPluginManager().callEvent(claimevt);
 
 			if(claimevt.isCancelled())
-				return; // if the event was cancelled
+				return;
 			
-			// assign id
 			new_claim.assignUniqueId();
-			// add to list
+
 			addClaim(new_claim);
 			
-			new ClaimVisual(User, new Claim[] { new_claim }, ResultType.CREATE);
+			Visuallization.applyClaimVisualsToPlayer(
+					thePlayer, new Claim[] { new_claim },
+					VisualType.CREATED);
 		} else {
-			// Found at least one intersecting claims
-			new ClaimVisual(User, intersecting.toArray(new Claim[0]),
-					ResultType.INTERSECT);
+			Visuallization.applyClaimVisualsToPlayer(
+					thePlayer, intersectingClaims.toArray(new Claim[0]),
+					VisualType.INTERSECTING);
 		}
 	}
 
@@ -221,6 +211,9 @@ public class CanvasClaims extends JavaPlugin {
 	}
 
 	public void addClaim(Claim theClaim) {
+		if(idToClaim.get(theClaim.getId()) != null)
+			return;
+		
 		ClaimBeforeAddEvent before_evt = new ClaimBeforeAddEvent(theClaim);
 
 		Bukkit.getPluginManager().callEvent(before_evt);

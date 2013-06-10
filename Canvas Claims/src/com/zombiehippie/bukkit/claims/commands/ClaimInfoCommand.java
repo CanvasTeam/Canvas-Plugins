@@ -7,7 +7,7 @@ import org.bukkit.entity.Player;
 
 import com.zombiehippie.bukkit.claims.CanvasClaims;
 import com.zombiehippie.bukkit.claims.Claim;
-import com.zombiehippie.bukkit.claims.visuals.ClaimVisual;
+import com.zombiehippie.bukkit.claims.visuals.Visuallization;
 
 public class ClaimInfoCommand implements CommandExecutor {
 	@Override
@@ -23,7 +23,7 @@ public class ClaimInfoCommand implements CommandExecutor {
 		
 		if(theClaim != null && theClaim.ownsClaim(thePlayer.getName())){
 			CanvasClaims.removeClaim(theClaim.getId());
-			ClaimVisual.resetPlayersVisuals(thePlayer.getName());
+			Visuallization.resetPlayerVisuals(thePlayer.getName());
 		}
 		return true;
 	}
